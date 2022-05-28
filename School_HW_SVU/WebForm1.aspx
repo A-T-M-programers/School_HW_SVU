@@ -24,7 +24,7 @@
         </div>
             <div class="nav" style="background-image: url('imges/first.jpg'); background-repeat: no-repeat; background-attachment: scroll; font-size: 53px; color: #FFFFFF; font-weight: bold;">
                 <h1 style="margin: 69px 69px 69px 200px; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; font-size: larger; color: #FFFFFF; font-weight: 400">معاً لنبني جيل المستقبل </h1>
-               
+              <h2>مرحبا بكم</h2> 
 
 
 
