@@ -26,6 +26,8 @@
                 <h1 style="margin: 69px 69px 69px 200px; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; font-size: larger; color: #FFFFFF; font-weight: 400">معاً لنبني جيل المستقبل </h1>
               <h2>مرحبا بكم</h2> 
 
+                <a href="www.google.com">Google</a>
+
 
 
             </div>
