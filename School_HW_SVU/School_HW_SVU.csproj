@@ -68,6 +68,10 @@
     <Content Include="App_Data\Database1_log.ldf">
       <DependentUpon>Database1.mdf</DependentUpon>
     </Content>
+    <Content Include="imges\first.jpg" />
+    <Content Include="imges\logo.png" />
+    <Content Include="imges\pens.png" />
+    <Content Include="imges\school.jpg" />
     <Content Include="Web.config" />
     <Content Include="WebForm1.aspx" />
   </ItemGroup>
