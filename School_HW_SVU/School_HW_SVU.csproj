@@ -75,7 +75,10 @@
     <Content Include="imges\girl.jpg" />
     <Content Include="imges\logo.png" />
     <Content Include="imges\pens.png" />
+    <Content Include="imges\photo.jpg" />
     <Content Include="imges\school.jpg" />
+    <Content Include="imges\sh.png" />
+    <Content Include="imges\المستقبل %282%29.png" />
     <Content Include="Web.config" />
     <Content Include="WebForm1.aspx" />
     <Content Include="WebForm2.aspx" />
