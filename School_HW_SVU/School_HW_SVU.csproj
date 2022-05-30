@@ -76,11 +76,19 @@
     <Content Include="imges\logo.png" />
     <Content Include="imges\pens.png" />
     <Content Include="imges\school.jpg" />
+    <Content Include="Liprary_Page.aspx" />
     <Content Include="Web.config" />
     <Content Include="WebForm1.aspx" />
     <Content Include="WebForm2.aspx" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Liprary_Page.aspx.cs">
+      <DependentUpon>Liprary_Page.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Liprary_Page.aspx.designer.cs">
+      <DependentUpon>Liprary_Page.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="WebForm1.aspx.cs">
       <DependentUpon>WebForm1.aspx</DependentUpon>
