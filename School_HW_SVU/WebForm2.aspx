@@ -45,7 +45,7 @@
             </div>
              
         </div>
-        <div class="library" style="                background: url(C:\Users\TOSHIBA\source\repos\School_HW_SVU\School_HW_SVU\imges\photo.jpg)" >
+        <div class="library" style="background: url(imges/photo.jpg);object-fit:contain;" >
             <h2 style="font-family: Arial, Helvetica, sans-serif; font-size: 50px; text-decoration: underline; font-style: italic; color: #CC0099; text-align: left">مكتبتنا المتنوعة</h2>
             <a href="#" style="font-family: Arial, Helvetica, sans-serif; font-size: 40px; text-decoration: none; color: #CC0066">القصص</a><br />
             <a href="#" style="font-family: Arial, Helvetica, sans-serif; font-size: 40px; color: #FF0066; text-decoration: none; text-align: left;"> الأغاني</a><br />
