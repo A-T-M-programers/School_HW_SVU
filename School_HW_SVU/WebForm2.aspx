@@ -12,8 +12,7 @@
             height:400px;
             background-image: url('imges/photo.jpg');
             background-repeat:no-repeat;
-            background-attachment:fixed;
-            background-size:cover;
+            background-size:auto;
         }
         .body1 {
             background-image:url('imges/first.jpg');
@@ -28,7 +27,7 @@
 <body class="body1">
         <div class="first" style="border-style: ridge; height: 44px; font-family: Arial, Helvetica, sans-serif; font-size: 30px; text-decoration: none; color: #FFFFFF; background-color: #666666; text-align: right;">
             <a href="#" style="text-decoration: none; font-family: Arial, Helvetica, sans-serif; color: #FFFFFF; font-size: 20px; text-align: center; margin-right: 40px;">الرئيسية</a>
-            <a href="#" style="text-decoration: none; font-size: 20px; color: #FFFFFF; text-align: center; margin-right: 40px;">المكتبة</a>
+            <a href="Liprary_Page.aspx" style="text-decoration: none; font-size: 20px; color: #FFFFFF; text-align: center; margin-right: 40px;">المكتبة</a>
             <a href="#" style="font-family: Arial, Helvetica, sans-serif; text-decoration: none; font-size: 20px; color: #FFFFFF; text-align: center; margin-right: 50px;">التسجيل</a>
         </div>
         <div class="top">
