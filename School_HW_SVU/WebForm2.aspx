@@ -5,23 +5,58 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title>مدرسة المستقبل</title>
-    <style type="text/css">
+    <style type="text/css" style="padding: 10px">
+        .first a{
+            font-size:20px;
+            font-family:'Arial Unicode MS';
+            text-align:center;
+            text-decoration:none;
+            
+           
+            
+            color:crimson;
+            margin:0px 70px 0px 0px;
+            
+        }
+        .top{
+            background-image:url(imges/photo.jpg);
+            background-size:100% 100%;
+        }
+        .top img{
+            animation:backwards;
+        }
+        .library a{
+            text-align:left;
+            text-decoration:none;
+            font-family:'Bold Art';
+            font-size:50;
+            border:thin;
+            border-radius:3px 4px;
+          margin:4px 50px 2px 4px;
+            background:linear-gradient(#636062,#ed75cd);
+            color:aliceblue;
+
+        }
   
     </style>
         
     
 </head>
-<body style="background-image:url('imges/first.jpg'); background-attachment: fixed;">
+<body style="background:linear-gradient(aliceblue,#ed75cd);">
     <form id="form1" runat="server">
-        <div class="first" style="border-style: ridge; height: 44px; font-family: Arial, Helvetica, sans-serif; font-size: 30px; text-decoration: none; color: #FFFFFF; background-color: #666666; text-align: right;">
-            <a href="#" style="text-decoration: none; font-family: Arial, Helvetica, sans-serif; color: #FFFFFF; font-size: 20px; text-align: center; margin-right: 40px;">الرئيسية</a>
-            <a href="#" style="text-decoration: none; font-size: 20px; color: #FFFFFF; text-align: center; margin-right: 40px;">المكتبة</a>
-            <a href="#" style="font-family: Arial, Helvetica, sans-serif; text-decoration: none; font-size: 20px; color: #FFFFFF; text-align: center; margin-right: 50px;">التسجيل</a>
+        <div class="first" style="border-style: ridge; height: 32px;background:linear-gradient(#e24b9f,aliceblue); text-align: right;">
+            <a href="#">الرئيسية</a>
+            <a href="#">المكتبة</a>
+            <a href="#" >التسجيل</a>
+            <a href="#">اتصل بنا</a>
+            <a href="#">حول المدرسة</a>
         </div>
         <div class="top">
-            <img src="imges/المستقبل (2).png" style="height: 229px; width: 233px; margin-left: 456px; margin-top: 7px" />
             
-                &nbsp;<h1 style="font-family: Andalus; font-size: 80px; font-weight: bold; color: #FFFFFF; text-align: center;">معاً لنبني جيل المستقبل </h1>
+            
+            <img src="imges/المستقبل (2).png" style="height: 216px; width: 319px; margin-left: 476px; margin-top: 151px"  />
+            
+               </div>
             
         <div class="move">
 
@@ -29,7 +64,7 @@
 
 
         </div>
-        <div class="nav" style="b; background-color: #BEC8DE;">
+        <div class="nav" style=" background:linear-gradient(#73a8cf,#dbe3ea)">
             <h2 style="font-family: 'Arabic Typesetting'; font-size: 80px; color: #333399; text-align: center; ">هيا نتعلم</h2>
             <table>
                 <tr>
@@ -45,13 +80,17 @@
             </div>
              
         </div>
-        <div class="library" style="background: url(imges/photo.jpg);object-fit:contain;" >
+        <div class="library"  style="background-color: #9999FF">
+                        <img src="imges/books.jpg" style="height: 240px; width: 317px; font-family: 'Agency FB'; font-size: 20px; color: #000000; left: auto;" />
+            
+            
             <h2 style="font-family: Arial, Helvetica, sans-serif; font-size: 50px; text-decoration: underline; font-style: italic; color: #CC0099; text-align: left">مكتبتنا المتنوعة</h2>
-            <a href="#" style="font-family: Arial, Helvetica, sans-serif; font-size: 40px; text-decoration: none; color: #CC0066">القصص</a><br />
-            <a href="#" style="font-family: Arial, Helvetica, sans-serif; font-size: 40px; color: #FF0066; text-decoration: none; text-align: left;"> الأغاني</a><br />
-            <a href="#" style="font-family: Arial, Helvetica, sans-serif; font-size: 40px; color: #CC0066; text-decoration: none; text-align: left;">الأفلام</a>
+            <a href="#">القصص</a>
+            <a href="#"> الأغاني</a>
+            <a href="#">الأفلام</a>
             <br />
-        </div>
+               
+     
         <div class="footer">
             جميع الحقوق محفوظة لمدرسة المستقبل
 
