@@ -51,7 +51,7 @@ img.img1{
 
 div.body1 {
     width:100%;
-    position:relative;
+    position:absolute;
     -webkit-animation:glide 3s ease-in-out alternate;
 }
 
@@ -81,37 +81,50 @@ div.div3{
 }
 div.div2{
     width:100%;
-    height:100%;
+    height:auto;
     background-color:white;
     position:absolute;
-    top:600px;
-    bottom:0;
+    top:340px;
 }
 p.p1 {
+    margin:0px;
+    border:0px;
+    width:100%;
+    height:auto;
+    text-align:center;
+    background-color:white;
     font-size: 46px;
-    font-weight: 700;
+    font-weight:700;
     text-transform: uppercase;
     line-height: 48px;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
-    opacity:0.7;
-    position:relative;
-    top:-25%;
+    position:absolute;
+    top:270px;
 }
 b.n1{
     color:deepskyblue;
 }
 svg.svg1{
+    margin:0px;
+    border:0px;
     width:100%;
     height:auto;
-    position:relative;
-    top:-18%;
+    position:absolute;
+    top:0px;
+    left:0px;
 }
 .image{
-    position:relative;
-    float:left;
     width:100%;
     height:auto;
-    bottom:0px;
+    border:0px;
+    margin:0px;
+    background-color:white;
+    background-image:url('imges/first.jpg');
+    background-repeat:no-repeat;
+    background-size:cover;
+    position:relative;
+    text-align:center;
+    top:100px;
 }
 </style>
 </head>
@@ -124,15 +137,15 @@ svg.svg1{
 <svg class="svg1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320";>
   <path fill="#ffffff" fill-opacity="1" d="M0,224L48,213.3C96,203,192,181,288,197.3C384,213,480,267,576,261.3C672,256,768,192,864,154.7C960,117,1056,107,1152,122.7C1248,139,1344,181,1392,202.7L1440,224L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">        
       <p class="p1">
-                    <b><b class="n1">مكتبة متنوعة
+                    <b style="opacity:0.7;"><b class="n1">مكتبة متنوعة
                     </b>
                         (قصص - افلام - اغاني)
                     </b>
                 </p> 
             </path></svg>
+            
             </div>
-            <div style="top:100%;position:absolute">
-                <img src="imges/first.jpg" class="image"/>
+            <div class="image">
             </div>
         
     </div>
