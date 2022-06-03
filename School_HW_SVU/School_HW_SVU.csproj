@@ -68,6 +68,22 @@
     <Content Include="App_Data\Database1_log.ldf">
       <DependentUpon>Database1.mdf</DependentUpon>
     </Content>
+    <Content Include="App_Data\school4.mdf" />
+    <Content Include="App_Data\school4_log.ldf" />
+    <Content Include="defalt.aspx" />
+    <Content Include="default.aspx" />
+    <Content Include="imges\555.jpg" />
+    <Content Include="imges\ADNOC-School-SAN-Branch-C-03-02-1024x640AR.jpg" />
+    <Content Include="imges\Child_paly_on_phone3.jpg" />
+    <Content Include="imges\download %281%29.jpg" />
+    <Content Include="imges\download %282%29.jpg" />
+    <Content Include="imges\download.jpg" />
+    <Content Include="imges\images %281%29.jpg" />
+    <Content Include="imges\images %282%29.jpg" />
+    <Content Include="imges\images.jpg" />
+    <Content Include="imges\pngtree-school-building-background-design-image_389461.jpg" />
+    <Content Include="imges\pngtree-school-season-teaching-building-background-material-buildingteachers-daycampusbuildingclassroomopening-season-image_66055.jpg" />
+    <Content Include="imges\textbook.png" />
     <Content Include="imges\books.jpg" />
     <Content Include="imges\boy.jpg" />
     <Content Include="imges\children.jpg" />
@@ -85,6 +101,20 @@
     <Content Include="WebForm2.aspx" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="defalt.aspx.cs">
+      <DependentUpon>defalt.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="defalt.aspx.designer.cs">
+      <DependentUpon>defalt.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="default.aspx.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="default.aspx.designer.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Liprary_Page.aspx.cs">
       <DependentUpon>Liprary_Page.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
