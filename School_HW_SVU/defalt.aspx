@@ -14,7 +14,7 @@
 
         div.form-content {
 text-align: center;
-  border: 5px solid black;
+  border: 10px solid darkmagenta;
   margin-top: 5px;
   margin-bottom: 50px;
   margin-right: 50px;
@@ -24,6 +24,8 @@ text-align: center;
        
          div.form-right-last {
   background-color:lavenderblush;
+   font: 20px Arial, sans-serif;
+   color:darkmagenta;
   
 }
           div.form-left-last {
@@ -32,9 +34,10 @@ text-align: center;
   
 }
           body {  background-image: url("imges/61H-M+E-eqL._AC_SL1000_.jpg");
-  
-}
-  
+                  color:blue;
+               }
+   h1{ color:goldenrod;}
+   h2{ color:forestgreen;}
          
     </style>
    
@@ -45,14 +48,15 @@ text-align: center;
 				<div class="form-left-last">
                     <h2>اشترك معنا الآن</h2>
                     <p>يرجى التواصل معنا لأي استفسار عن المدرسة <br />مستعدون للإجابة عن كل أسئلتكم </p>
-                    <p>للتواصل معنا :<br />wwwwwwwwwww :البريد الالكتروني  <br />الهاتف :00000000000000</p>
+                    <h2>:للتواصل معنا</h2>
+                    <p>wwwwwwwwwww :البريد الالكتروني  <br />الهاتف :00000000000000</p>
 				</div>
          <div class="form-right-last">
      <h1>للاشتراك الرجاء تعبئة الاستمارة</h1>
      <h2>هذه الاستمارة لتسجيل طالب واحد فقط . إذا رغبت بتسجيل أكثر من طفل ، يرجى تعبئة استمارة لكل واحدٍ منهم .</h2>
      <p style="color: red;">الحقول المعلّمة بـ* هي حقول إجباريّة </p>
     <form id="form1" runat="server">
-        <div >
+       
             <div >
             <asp:Label ID="Label1" runat="server" Text="اسم الطفل كاملا *"></asp:Label><br />
             <asp:TextBox ID="name" runat="server" Width="381px" Height="16px" required></asp:TextBox><br />
@@ -227,12 +231,9 @@ text-align: center;
                 <asp:Label ID="Label21" runat="server" Text="تأكيد كلمة المرور"></asp:Label><br />
                <input id="conPassword" type="password" Height="16px" /><br />
             </div>
-            
-
-        <br />
          <input id="Submit1" type="submit" value="سجل الأن" />
         </div>
-        </p> </div>
+         </div>
     </form>
  </body>
 </html>
