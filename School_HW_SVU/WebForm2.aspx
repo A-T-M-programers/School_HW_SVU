@@ -15,20 +15,18 @@
             background-size:auto;
             text-align:left;
         }
-        .body1 {
-            background-image:url('imges/first.jpg');
-            background-attachment: fixed;
-            background-size:cover;
-            direction:rtl;
-        }
+ 
+        
         .first{
             font-size: 30px;
             text-decoration: none;
             color: #FFFFFF;
-            background:linear-gradient(#808080,#1e1818);
+            background:linear-gradient(#e658af,#FF00FF);
             text-align: right;
             font-family: Arial, Helvea, sticans-serif;
-            border-style: ridge; height: 44px; 
+            border:none; 
+            height: 44px; 
+            
         }
         .first a{
             text-decoration: none;
@@ -63,6 +61,21 @@
 
 
         }
+     
+     
+
+        
+     
+        .footer{
+            background-color:#952bde;
+            height:400px;
+
+        }
+
+        
+     
+
+        
     </style>
         
     
@@ -73,12 +86,11 @@
             <a href="Liprary_Page.aspx">المكتبة</a>
             <a href="#" >التسجيل</a>
         </div>
-        <div class="top">
-            <h1 style="font-family: Andalus; font-size: 80px; font-weight: bold; color: #FFFFFF; text-align: center;">معاً لنبني جيل المستقبل </h1>
-
-
-        </div>
-        <p>
+    <div class="auto-style2">
+        
+    </div>
+ 
+       
         <div class="nav">
             <h2 style="font-family: 'Arabic Typesetting'; font-size: 80px; color: #333399; text-align: center; ">هيا نتعلم</h2>
             <table>
@@ -107,8 +119,17 @@
             <a href="#" style="padding: 10px">الأفلام</a>
             
         </div>
+    
+
+    
+    
         <div class="footer">
-            جميع الحقوق محفوظة لمدرسة المستقبل
+            <h3 style="font-family: Aharoni; text-align: right; padding-top: 30px; padding-right: 50px; color: #FFFFFF; font-size:40px;">معلومات الاتصال</h3>
+            <br />
+            <p style="font-family: Andalus; font-size: 30px; text-align: right;  padding-right: 50px; color: #FFFFFF;">0966788058</p>
+            <p style="color: #FFFFFF; font-family: Andalus; font-size: 30px; text-align: right; padding-right: 50px">futureschool@gmail.com</p>
+            <hr />
+            <p style="font-size: 20px; color: #FFFFFF; text-align: right; padding-top: 40px; padding-right: 40px;"> جميع الحقوق محفوظة لمدرسة المستقبل</p>
 
         </div>
 </body>
