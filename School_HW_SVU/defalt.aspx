@@ -4,18 +4,59 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <title></title>
-    
+    <title>استمارة تسجيل الطالب</title>
+
     <style type="text/css">
         #Password1 {
             width: 219px;
         }
+       
+
+        div.form-content {
+text-align: center;
+  border: 10px solid darkmagenta;
+  margin-top: 5px;
+  margin-bottom: 50px;
+  margin-right: 50px;
+  margin-left:50px;
+  background-color:darkmagenta;
+}
+       
+         div.form-right-last {
+  background-color:lavenderblush;
+   font: 20px Arial, sans-serif;
+   color:darkmagenta;
+  
+}
+          div.form-left-last {
+              
+   background-image: url("imges/555.jpg");
+  
+}
+          body {  background-image: url("imges/61H-M+E-eqL._AC_SL1000_.jpg");
+                  color:blue;
+               }
+   h1{ color:goldenrod;}
+   h2{ color:forestgreen;}
+         
     </style>
-    
+   
+
 </head>
- <body>
+ <body style="margin-top: 137px" >          
+     <div class="form-content" >
+				<div class="form-left-last">
+                    <h2>اشترك معنا الآن</h2>
+                    <p>يرجى التواصل معنا لأي استفسار عن المدرسة <br />مستعدون للإجابة عن كل أسئلتكم </p>
+                    <h2>:للتواصل معنا</h2>
+                    <p>wwwwwwwwwww :البريد الالكتروني  <br />الهاتف :00000000000000</p>
+				</div>
+         <div class="form-right-last">
+     <h1>للاشتراك الرجاء تعبئة الاستمارة</h1>
+     <h2>هذه الاستمارة لتسجيل طالب واحد فقط . إذا رغبت بتسجيل أكثر من طفل ، يرجى تعبئة استمارة لكل واحدٍ منهم .</h2>
+     <p style="color: red;">الحقول المعلّمة بـ* هي حقول إجباريّة </p>
     <form id="form1" runat="server">
-        <div >
+       
             <div >
             <asp:Label ID="Label1" runat="server" Text="اسم الطفل كاملا *"></asp:Label><br />
             <asp:TextBox ID="name" runat="server" Width="381px" Height="16px" required></asp:TextBox><br />
@@ -190,11 +231,9 @@
                 <asp:Label ID="Label21" runat="server" Text="تأكيد كلمة المرور"></asp:Label><br />
                <input id="conPassword" type="password" Height="16px" /><br />
             </div>
-            
-
-        </div><br />
          <input id="Submit1" type="submit" value="سجل الأن" />
-        
+        </div>
+         </div>
     </form>
  </body>
 </html>
