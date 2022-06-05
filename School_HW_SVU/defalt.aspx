@@ -15,7 +15,7 @@
         div.form-content {
 text-align: center;
   border: 10px solid darkmagenta;
-  margin-top: 5px;
+  margin-top: 137px;
   margin-bottom: 50px;
   margin-right: 50px;
   margin-left:50px;
@@ -33,8 +33,12 @@ text-align: center;
    background-image: url("imges/555.jpg");
   
 }
-          body {  background-image: url("imges/61H-M+E-eqL._AC_SL1000_.jpg");
-                  color:blue;
+          .background{
+              background-image: url('imges/61H.jpg');
+              background-size:cover;
+              background-repeat:no-repeat;
+              position:absolute;
+              color:blue;
                }
    h1{ color:goldenrod;}
    h2{ color:forestgreen;}
@@ -43,7 +47,7 @@ text-align: center;
    
 
 </head>
- <body style="margin-top: 137px" >          
+ <body class="background">
      <div class="form-content" >
 				<div class="form-left-last">
                     <h2>اشترك معنا الآن</h2>
@@ -232,8 +236,9 @@ text-align: center;
                <input id="conPassword" type="password" Height="16px" /><br />
             </div>
          <input id="Submit1" type="submit" value="سجل الأن" />
+        </form>
         </div>
+         
          </div>
-    </form>
  </body>
 </html>
