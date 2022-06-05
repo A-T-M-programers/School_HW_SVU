@@ -7,6 +7,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>مدرسة المستقبل</title>
     <style type="text/css">
+        .body1{
+            background-image:url('imges/22.jpeg');
+            background-size:cover;
+            background-attachment:fixed;
+
+        }
+
+
+        .style1{
+            width:1000px;
+            height:400px;
+            background-image:url('imges/school.jpg');
+            background-size:cover;
+            background-attachment:scroll;
+            border:none;
+            border-radius:10px 10px;
+            margin-left:100px;
+            box-shadow:#aeadad 10px 10px;
+        }
+       .style1 p{
+           color:aliceblue;
+           font-size:50px;
+           text-align:right;
+           
+           margin-right:20px;
+           font-family:'Book Antiqua';
+
+
+        }
+       .style1 h2{
+           font-family:Andalus;
+           text-align:right;
+           color:darkcyan;
+           font-size:80px;
+           margin-right:60px;
+           
+       }
+
        .library {
             width:100%;
             height:400px;
@@ -76,6 +114,21 @@
      
 
         
+
+        
+     
+
+        
+        
+        
+     
+
+        
+
+        
+     
+
+        
     </style>
         
     
@@ -86,16 +139,24 @@
             <a href="Liprary_Page.aspx">المكتبة</a>
             <a href="#" >التسجيل</a>
         </div>
-    <div class="auto-style2">
+    <div class="style1" >
+        <p style="padding-top: 30px; padding-right: 30px;">
+           أهلا بمتعة التعلم
+        </p>
         
+        <h2>مدرسة المستقبل</h2>
+
     </div>
+    
+        
+    
  
        
         <div class="nav">
             <h2 style="font-family: 'Arabic Typesetting'; font-size: 80px; color: #333399; text-align: center; ">هيا نتعلم</h2>
             <table>
                 <tr>
-                    <td class="auto-style2"><img src="imges/pens.png" width="300" height="300" style="border-style: dashed; border-color: #6666FF; padding: 20px; margin-left: 59px; margin-right: 139px;" /> </td>
+                    <td class="auto-style2"><img src="imges/children.jpg" width="300" height="300" style="border-style: dashed; border-color: #6666FF; padding: 20px; margin-left: 59px; margin-right: 139px;" /> </td>
                     <td class="auto-style1"><img src="imges/girl.jpg" width="300" height="300" style="border-color: #6666FF; padding: 20px; border-style: dashed; margin-left: 199px"/></td>
                     
                 </tr>
@@ -109,7 +170,8 @@
              
         </div>
         
-        </p>
+        
+
         <div class="library">
             <h2 >مكتبتنا المتنوعة</h2>
             <a href="#" style="padding: 10px">القصص</a>
