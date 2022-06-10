@@ -79,32 +79,7 @@
         }
        
 
-        .library h2{
-            font-family: Arial, Helvetica, sans-serif;
-            font-size: 50px;
-            text-decoration: none; 
-            font-style: italic;
-            color: #CC0099;
-             text-align: center;
-
-        }
-        .library a{
-            font-family:Arial, Helvetica, sans-serif;
-            font-size:40px;
-            border:none;
-            background:linear-gradient(#bf8af5,#cfbce2);
-            text-align:left;
-            margin-left:220px;
-            border-radius:30px 30px;
-            text-decoration:none;
-            color:aliceblue;
-            
-
-        }
        
-           
-        }
-     
      
 
         
@@ -171,7 +146,10 @@
  
        
         <div class="nav">
-            <h2 style="font-family:'Bold Art'; font-size: 80px; color: #333399; text-align: center; ">هيا نتعلم</h2>
+             <h2 style="font-family:'Bold Art'; font-size: 80px; color: #333399; text-align: center; ">هيا نتعلم</h2>
+
+
+            <img src="imges/bus.gif" width="300" height="300" style="margin-left:500px" />
             <table>
                 <tr>
                     <td class="auto-style2"><img src="imges/children.jpg" width="300" height="300" style="border-style: dashed; border-color: #6666FF; padding: 20px;margin-left:139px; margin-right: 139px; box-shadow:#aeadad 5px 5px;" /> </td>
@@ -191,15 +169,7 @@
         
         <br />
 
-        <div class="library">
-            <h2 >مكتبتنا المتنوعة</h2>
-            
-            <a href="#" style="padding: 10px"> الأغاني</a>
-            
-            <a href="#" style="padding: 10px">الأفلام</a>
-            
-        </div>
-    
+     
 
     
     
@@ -208,8 +178,9 @@
             <br />
             <p style="font-family: Andalus; font-size: 30px; text-align: right;  padding-right: 50px; color: #FFFFFF;">0966788058</p>
             <p style="color: #FFFFFF; font-family: Andalus; font-size: 30px; text-align: right; padding-right: 50px">futureschool@gmail.com</p>
+            
             <hr />
-            <p style="font-size: 20px; color: #FFFFFF; text-align: right; padding-top: 40px; padding-right: 40px;"> جميع الحقوق محفوظة لمدرسة المستقبل</p>
+            <p style="font-size: 20px; color: #FFFFFF; text-align: left; padding-top: 150px; padding-right: 40px;"> جميع الحقوق محفوظة لمدرسة المستقبل</p>
 
         </div>
 </body>
