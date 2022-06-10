@@ -68,6 +68,44 @@ svg.height_svg{
     width:60%;
     margin-bottom:20px;
 }
+.image{
+    width:100%;
+    height:200px;
+    border:0px;
+    margin:0px;
+    background-color:white;
+    background-image:url('imges/first.jpg');
+    background-repeat:no-repeat;
+    background-size:cover;
+    --mask: 
+  linear-gradient(#000 0 0) center/100% calc(100% - 200px) no-repeat,
+  radial-gradient(circle farthest-side,#000 98%,#0000) top/185.00px 200px repeat-x,
+  radial-gradient(circle farthest-side,#000 98%,#0000) bottom/185.00px 200px;
+-webkit-mask: var(--mask);
+        mask: var(--mask);
+}
+.p_size_title_in_image{
+    font-size:36px;
+    margin-bottom:20px;
+    position:relative;
+    top:30px;
+}
+.p_size_content_in_image{
+    font-size:24px;
+    position:relative;
+    top:40px;
+}
+.background_white{
+    width:100%;
+    height:2800px;
+}
+.video {
+    background-color:dodgerblue;
+    width:300px;
+    height:300px;
+    margin:20px;
+    border-radius:20px;
+}
 @media screen and (max-width: 600px) {
   ul.topnav li.left, 
   ul.topnav li {float: none;}
@@ -78,6 +116,32 @@ svg.height_svg{
   .h1_size{font-size:24px;}
   .p_size{font-size:14px;}
   .image_size{width:20%;}
+  .image{
+    width:100%;
+    height:100px;
+    border:0px;
+    margin:0px;
+    background-color:white;
+    background-image:url('imges/first.jpg');
+    background-repeat:no-repeat;
+    background-size:cover;
+    --mask: 
+  linear-gradient(#000 0 0) center/100% calc(100% - 100px) no-repeat,
+  radial-gradient(circle farthest-side,#000 98%,#0000) top/78.00px 100px repeat-x,
+  radial-gradient(circle farthest-side,#000 98%,#0000) bottom/78.00px 100px;
+-webkit-mask: var(--mask);
+        mask: var(--mask);
+}
+  .p_size_title_in_image{font-size:24px;margin-bottom:10px;position:relative;top:20px;}
+  .p_size_content_in_image{font-size:16px;position:relative;top:20px;}
+  .background_white{height:4500px;}
+  .video {
+    background-color:dodgerblue;
+    width:150px;
+    height:150px;
+    margin:20px;
+    border-radius:20px;
+}
 }
 
 img.img1{
@@ -148,60 +212,6 @@ svg.svg1{
     top:0px;
     left:0px;
 }
-.image{
-    width:100%;
-    height:200px;
-    border:0px;
-    margin:0px;
-    background-color:white;
-    background-image:url('imges/first.jpg');
-    background-repeat:no-repeat;
-    background-size:cover;
-    position:absolute;
-    top:400px;
-    --mask: 
-  linear-gradient(#000 0 0) center/100% calc(100% - 200px) no-repeat,
-  radial-gradient(circle farthest-side,#000 98%,#0000) top/185.00px 200px repeat-x,
-  radial-gradient(circle farthest-side,#000 98%,#0000) bottom/185.00px 200px;
--webkit-mask: var(--mask);
-        mask: var(--mask);
-}
-.image1{
-    width:100%;
-    height:200px;
-    border:0px;
-    margin:0px;
-    background-color:white;
-    background-image:url('imges/first.jpg');
-    background-repeat:no-repeat;
-    background-size:cover;
-    position:absolute;
-    top:1200px;
-    --mask: 
-  linear-gradient(#000 0 0) center/100% calc(100% - 200px) no-repeat,
-  radial-gradient(circle farthest-side,#000 98%,#0000) top/185.00px 200px repeat-x,
-  radial-gradient(circle farthest-side,#000 98%,#0000) bottom/185.00px 200px;
--webkit-mask: var(--mask);
-        mask: var(--mask);
-}
-.image2{
-    width:100%;
-    height:200px;
-    border:0px;
-    margin:0px;
-    background-color:white;
-    background-image:url('imges/first.jpg');
-    background-repeat:no-repeat;
-    background-size:cover;
-    position:absolute;
-    top:2700px;
-    --mask: 
-  linear-gradient(#000 0 0) center/100% calc(100% - 200px) no-repeat,
-  radial-gradient(circle farthest-side,#000 98%,#0000) top/185.00px 200px repeat-x,
-  radial-gradient(circle farthest-side,#000 98%,#0000) bottom/185.00px 200px;
--webkit-mask: var(--mask);
-        mask: var(--mask);
-}
 .row{
     display:flex;
     flex-direction:row;
@@ -212,15 +222,6 @@ svg.svg1{
     margin:0;
     padding:0px;
     background-color:white;
-    position:absolute;
-    top:620px;
-}
-.video {
-    background-color:dodgerblue;
-    width:300px;
-    height:300px;
-    margin:20px;
-    border-radius:20px;
 }
 .music {
     background-color:antiquewhite;
@@ -253,7 +254,7 @@ svg.svg1{
         <form id="form1" runat="server">
     <div class="body1">
         <div class="div3"></div>
-        <div style="background-color:white; width:100%;height:3500px;top:560px;position:absolute;"></div>
+        <div class="background_white" style="background-color:white;width:100%;top:560px;position:absolute;"></div>
         <div class="div2">  
             
 <svg class="svg1 height_svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320";>
@@ -270,127 +271,131 @@ svg.svg1{
     
     
 </svg>
-            <div class="image">
-        <p style="color:white; text-align:center;top:30px;position:relative;padding:0;margin:0;margin-bottom:20px;font-size:36px;font-family:Verdana, Geneva, Tahoma, sans-serif;"> القصص</p>
-        <p style="color:white; text-align:center;top:30px;position:relative;padding:0;margin:0;font-size:24px;font-family:Verdana, Geneva, Tahoma, sans-serif;">مجموعة متنوعة من القصص</p>
-    </div>
-    <div class="row_column store" style="justify-content:center;align-items:center;align-content:center;">
-        <div style="position:relative;width:100%;flex:50%;">
-            <h1 class="h1_size" style="font-family:Verdana, Geneva, Tahoma, sans-serif; font-weight:300;opacity:0.8">القصص</h1>
-            <p class="p_size" style="font-family:Verdana, Geneva, Tahoma, sans-serif;font-weight:300">لدينا مجموعة متنوعة من القصص المتوفرة مجاناً لكل زوار موقعنا حيث يمكنهم قراءتها أو تحميلها مجاناً</p>
+<div style="display:flex;flex-direction:column;position:relative;top:400px">
+    <div style="flex:35%;">
+        <div class="image">
+            <p class="p_size_title_in_image" style="color:white; text-align:center;padding:0;margin:0;font-family:Verdana, Geneva, Tahoma, sans-serif;"> القصص</p>
+            <p class="p_size_content_in_image" style="color:white; text-align:center;padding:0;margin:0;font-family:Verdana, Geneva, Tahoma, sans-serif;">مجموعة متنوعة من القصص</p>
         </div>
-        <div style="padding:0px;margin:0px;flex:50%;width:100%;align-content:space-between;">
-            <div class="row_column_item">
-                <div style="flex:70%">
-                    <h4 class="h4_size" style="font-family:Verdana, Geneva, Tahoma, sans-serif;color:#212121;opacity:0.8;padding-bottom:0;margin-bottom:0;">قصص إسلامية</h4>
-                    <p class="p_size" style="font-family:Verdana, Geneva, Tahoma, sans-serif;padding-top:0;margin-top:0;">مكتبة متنوعة من قصص السيرة والأنبياء</p>
-                </div>
-                <div style="width:100%;height:auto;padding:0;flex:30%;">
-                <a>
-                    <img src="imges/minaret.png"; class="image_size"/>
-                </a>
-                </div>
+        <div class="row_column store" style="justify-content:center;align-items:center;align-content:center;">
+            <div style="position:relative;width:100%;flex:50%;">
+                <h1 class="h1_size" style="font-family:Verdana, Geneva, Tahoma, sans-serif; font-weight:300;opacity:0.8">القصص</h1>
+                <p class="p_size" style="font-family:Verdana, Geneva, Tahoma, sans-serif;font-weight:300">لدينا مجموعة متنوعة من القصص المتوفرة مجاناً لكل زوار موقعنا حيث يمكنهم قراءتها أو تحميلها مجاناً</p>
             </div>
-            <div class="row_column_item">
-                <div style="flex:70%">
-                    <h4 class="h4_size" style="font-family:Verdana, Geneva, Tahoma, sans-serif;color:#212121;opacity:0.8;padding-bottom:0;margin-bottom:0;">قصص تربوية</h4>
-                    <p class="p_size" style="font-family:Verdana, Geneva, Tahoma, sans-serif;padding-top:0;margin-top:0;">العديد من القصص الهادفة والتوعوية</p>
+            <div style="padding:0px;margin:0px;flex:50%;width:100%;align-content:space-between;">
+                <div class="row_column_item">
+                    <div style="flex:70%">
+                        <h4 class="h4_size" style="font-family:Verdana, Geneva, Tahoma, sans-serif;color:#212121;opacity:0.8;padding-bottom:0;margin-bottom:0;">قصص إسلامية</h4>
+                        <p class="p_size" style="font-family:Verdana, Geneva, Tahoma, sans-serif;padding-top:0;margin-top:0;">مكتبة متنوعة من قصص السيرة والأنبياء</p>
+                    </div>
+                    <div style="width:100%;height:auto;padding:0;flex:30%;">
+                        <a href="#blank">
+                            <img src="imges/minaret.png"; class="image_size"/>
+                        </a>
+                    </div>
                 </div>
-                <a style="width:20%;padding:0;margin:0;flex:30%">
-                    <img src="imges/law.png"; class="image_size"/>
-                </a>
-            </div>
-            <div class="row_column_item">
-                <div style="flex:70%">
-                    <h4 class="h4_size" style="font-family:Verdana, Geneva, Tahoma, sans-serif;color:#212121;opacity:0.8;padding-bottom:0;margin-bottom:0;">قصص ترفيهية</h4>
-                    <p class="p_size" style="font-family:Verdana, Geneva, Tahoma, sans-serif;padding-top:0;margin-top:0;">مجموعة من القصص الممتعة والمسلية</p>
+                <div class="row_column_item">
+                    <div style="flex:70%">
+                        <h4 class="h4_size" style="font-family:Verdana, Geneva, Tahoma, sans-serif;color:#212121;opacity:0.8;padding-bottom:0;margin-bottom:0;">قصص تربوية</h4>
+                        <p class="p_size" style="font-family:Verdana, Geneva, Tahoma, sans-serif;padding-top:0;margin-top:0;">العديد من القصص الهادفة والتوعوية</p>
+                    </div>
+                        <a style="width:20%;padding:0;margin:0;flex:30%">
+                            <img src="imges/law.png"; class="image_size"/>
+                        </a>
                 </div>
-                <a style="width:20%;padding:0;margin:0;flex:30%">
-                    <img src="imges/iconfinder_bookshelf_1055107.png"; class="image_size"/>
-                </a>
+                <div class="row_column_item">
+                    <div style="flex:70%">
+                        <h4 class="h4_size" style="font-family:Verdana, Geneva, Tahoma, sans-serif;color:#212121;opacity:0.8;padding-bottom:0;margin-bottom:0;">قصص ترفيهية</h4>
+                        <p class="p_size" style="font-family:Verdana, Geneva, Tahoma, sans-serif;padding-top:0;margin-top:0;">مجموعة من القصص الممتعة والمسلية</p>
+                    </div>
+                        <a style="width:20%;padding:0;margin:0;flex:30%">
+                            <img src="imges/iconfinder_bookshelf_1055107.png"; class="image_size"/>
+                        </a>
+                </div>
             </div>
         </div>
     </div>
-    <div class="image1">
-        <p style="color:white; text-align:center;top:30px;position:relative;padding:0;margin:0;margin-bottom:20px;font-size:36px;font-family:Verdana, Geneva, Tahoma, sans-serif;"> الأفلام</p>
-        <p style="color:white; text-align:center;top:30px;position:relative;padding:0;margin:0;font-size:24px;font-family:Verdana, Geneva, Tahoma, sans-serif;">مجموعة متنوعة من الأفلام</p>
-    </div>
-    <div style="top:1400px;position:relative;background-color:white;text-align:center;padding:0;margin:0;">
-        <p style="opacity:0.7;color:black; text-align:center;top:30px;position:relative;padding:0;margin:0;margin-bottom:20px;font-size:36px;font-family:Verdana, Geneva, Tahoma, sans-serif;"> الأفلام</p>
-        <p style="opacity:0.7;color:black; text-align:center;top:30px;position:relative;padding:0;margin:0;font-size:24px;font-family:Verdana, Geneva, Tahoma, sans-serif;">لدينا مجموعة متنوعة من الرسوم المتحركة المفيدة والمسلية لمختلف الأعمار</p>
-    </div>
-    <div style="background-color:white;width:100%;position:relative;top:1500px;justify-content:center;display:flex;">
-    <div style="position:relative;width:100%;height:auto;display:flex;justify-content:center;flex-wrap:wrap;">
-        <div class="video"></div>
-        <div class="video"></div>
-        <div class="video"></div>
-        <div class="video"></div>
-        <div class="video"></div>
-        <div class="video"></div>
-        <div class="video" style="flex:25%;margin-left:120px;"></div>
-        <div class="video" style="flex:25%;margin-right:120px;"></div>
-    </div>
+    <div style="flex:35%;">
+        <div class="image" >
+            <p class="p_size_title_in_image" style="color:white; text-align:center;padding:0;margin:0;font-family:Verdana, Geneva, Tahoma, sans-serif;"> الأفلام</p>
+            <p class="p_size_content_in_image" style="color:white; text-align:center;padding:0;margin:0;font-family:Verdana, Geneva, Tahoma, sans-serif;">مجموعة متنوعة من الأفلام</p>
+        </div>
+        <div style="position:relative;background-color:white;text-align:center;padding:0;margin:0;">
+            <p style="opacity:0.7;color:black; text-align:center;top:30px;position:relative;padding:0;margin:0;margin-bottom:20px;font-size:36px;font-family:Verdana, Geneva, Tahoma, sans-serif;"> الأفلام</p>
+            <p style="opacity:0.7;color:black; text-align:center;top:30px;position:relative;padding:0;margin:0;font-size:24px;font-family:Verdana, Geneva, Tahoma, sans-serif;">لدينا مجموعة متنوعة من الرسوم المتحركة المفيدة والمسلية لمختلف الأعمار</p>
+        </div>
+        <div style="background-color:white;width:100%;position:relative;top:50px;justify-content:center;display:flex;margin-bottom:50px;">
+            <div style="position:relative;width:100%;height:auto;display:flex;justify-content:center;flex-wrap:wrap;">
+                <div class="video"></div>
+                    <div class="video"></div>
+                    <div class="video"></div>
+                    <div class="video"></div>
+                    <div class="video"></div>
+                    <div class="video"></div>
+                    <div class="video" style="flex:25%;margin-left:120px;"></div>
+                    <div class="video" style="flex:25%;margin-right:120px;"></div>
+            </div>
         </div> 
-    <div class="image2">
-        <p style="color:white; text-align:center;top:30px;position:relative;padding:0;margin:0;margin-bottom:20px;font-size:36px;font-family:Verdana, Geneva, Tahoma, sans-serif;"> الأغاني</p>
-        <p style="color:white; text-align:center;top:30px;position:relative;padding:0;margin:0;font-size:24px;font-family:Verdana, Geneva, Tahoma, sans-serif;">مجموعة متنوعة من الأغاني</p>
     </div>
-    <div style="top:1800px;position:relative;background-color:white;text-align:center;padding:0;margin:0;">
-        <p style="opacity:0.7;color:black; text-align:center;top:30px;position:relative;padding:0;margin:0;margin-bottom:20px;font-size:36px;font-family:Verdana, Geneva, Tahoma, sans-serif;"> الأغاني</p>
-        <p style="opacity:0.7;color:black; text-align:center;top:30px;position:relative;padding:0;margin:0;font-size:24px;font-family:Verdana, Geneva, Tahoma, sans-serif;">لدينا مجموعة متنوعة من الأناشيد والأغاني المسلية والمفيدة بآن واحد</p>
-    </div>
-            <div style="background-color:white;width:100%;position:relative;top:1900px;justify-content:center;display:flex;">
-    <div style="position:relative;width:100%;height:auto;display:flex;justify-content:center;flex-wrap:wrap;">
-        <div class="music">
-            <div style="display:flex;flex-direction:column">
-                <div style="margin-top:20px;">
-                    <img src="imges/545454.jpg" width="150px" height="150px" style="border-radius:20px;"/>
+    <div style="flex:35%;">
+        <div class="image">
+            <p class="p_size_title_in_image" style="color:white; text-align:center;padding:0;margin:0;font-family:Verdana, Geneva, Tahoma, sans-serif;"> الأغاني</p>
+            <p class="p_size_content_in_image" style="color:white; text-align:center;padding:0;margin:0;font-family:Verdana, Geneva, Tahoma, sans-serif;">مجموعة متنوعة من الأغاني</p>
+        </div>
+        <div style="position:relative;background-color:white;text-align:center;padding:0;margin:0;">
+            <p style="opacity:0.7;color:black; text-align:center;top:30px;position:relative;padding:0;margin:0;margin-bottom:20px;font-size:36px;font-family:Verdana, Geneva, Tahoma, sans-serif;"> الأغاني</p>
+            <p style="opacity:0.7;color:black; text-align:center;top:30px;position:relative;padding:0;margin:0;font-size:24px;font-family:Verdana, Geneva, Tahoma, sans-serif;">لدينا مجموعة متنوعة من الأناشيد والأغاني المسلية والمفيدة بآن واحد</p>
+        </div>
+        <div style="background-color:white;width:100%;position:relative;top:50px;justify-content:center;display:flex;">
+            <div style="position:relative;width:100%;height:auto;display:flex;justify-content:center;flex-wrap:wrap;">
+                <div class="music">
+                    <div style="display:flex;flex-direction:column">
+                        <div style="margin-top:20px;">
+                            <img src="imges/545454.jpg" width="150px" height="150px" style="border-radius:20px;"/>
+                    </div>
+                    <div>
+                        <p style="opacity:0.8;color:black; text-align:center;font-size:20px;font-family:Verdana, Geneva, Tahoma, sans-serif;">أغانينا</p>
+                    </div>
+                    <div class="button">
+                        <i class='fas fa-music' style='font-size:18px;color:white'></i>
+                        <asp:Button runat="server" Text="للأستماع" CssClass="button1"/>
+                    </div>
                 </div>
-                <div>
-                    <p style="opacity:0.8;color:black; text-align:center;font-size:20px;font-family:Verdana, Geneva, Tahoma, sans-serif;">أغانينا</p>
+            </div>
+            <div class="music">
+                <div style="display:flex;flex-direction:column">
+                    <div style="margin-top:20px;">
+                        <img src="imges/23344.jpg" width="150px" height="150px" style="border-radius:20px;"/>
+                    </div>
+                    <div>
+                        <p style="opacity:0.8;color:black; text-align:center;font-size:20px;font-family:Verdana, Geneva, Tahoma, sans-serif;">عالم مرح</p>
+                    </div>
+                    <div class="button">
+                        <i class='fas fa-music' style='font-size:18px;color:white'></i>
+                        <asp:Button runat="server" Text="للأستماع" CssClass="button1"/>
+                    </div>
                 </div>
-                <div class="button">
-                    <i class='fas fa-music' style='font-size:18px;color:white'></i>
-                    <asp:Button runat="server" Text="للأستماع" CssClass="button1"/>
-                    
+            </div>
+            <div class="music">
+                <div style="display:flex;flex-direction:column">
+                    <div style="margin-top:20px;">
+                        <img src="imges/1111.jpg" width="150px" height="150px" style="border-radius:20px;"/>
+                    </div>
+                    <div>
+                        <p style="opacity:0.8;color:black; text-align:center;font-size:20px;font-family:Verdana, Geneva, Tahoma, sans-serif;">عالم مرح التعليمي</p>
+                    </div>
+                    <div class="button">
+                        <i class='fas fa-music' style='font-size:18px;color:white'></i>
+                        <asp:Button runat="server" Text="للأستماع" CssClass="button1"/>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="music">
-            <div style="display:flex;flex-direction:column">
-                <div style="margin-top:20px;">
-                    <img src="imges/23344.jpg" width="150px" height="150px" style="border-radius:20px;"/>
-                </div>
-                <div>
-                    <p style="opacity:0.8;color:black; text-align:center;font-size:20px;font-family:Verdana, Geneva, Tahoma, sans-serif;">عالم مرح</p>
-                </div>
-                <div class="button">
-                    <i class='fas fa-music' style='font-size:18px;color:white'></i>
-                    <asp:Button runat="server" Text="للأستماع" CssClass="button1"/>
-                    
-                </div>
+     </div>
+  </div>
+            </div> 
             </div>
-        </div>
-        <div class="music">
-            <div style="display:flex;flex-direction:column">
-                <div style="margin-top:20px;">
-                    <img src="imges/1111.jpg" width="150px" height="150px" style="border-radius:20px;"/>
-                </div>
-                <div>
-                    <p style="opacity:0.8;color:black; text-align:center;font-size:20px;font-family:Verdana, Geneva, Tahoma, sans-serif;">عالم مرح التعليمي</p>
-                </div>
-                <div class="button">
-                    <i class='fas fa-music' style='font-size:18px;color:white'></i>
-                    <asp:Button runat="server" Text="للأستماع" CssClass="button1"/>
-                    
-                </div>
-            </div>
-        </div>
-    </div>
-        </div> 
-                </div>
-        
-    </div>
+         </div>
             
                 <nav>
 <ul class="topnav">
