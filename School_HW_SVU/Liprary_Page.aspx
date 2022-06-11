@@ -7,6 +7,30 @@
     <title>المكتبة</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script>
+var x = 0;
+$(document).ready(function () {
+    $(this).scroll(function () {
+        x += 1;
+        if ($(this).scrollTop() >= 400) {
+            $('#section_1').fadeIn(2000);
+        }
+        if ($(this).scrollTop() >= 1000) {
+            $('#section_2').fadeIn(2000);
+        }
+        if ($(this).scrollTop() >= 2300) {
+            $('#section_3').fadeIn(2000);
+        }
+      
+  });
+});
+$(document).ready(function () {
+    $("#a_silent").mouseenter(function () {
+
+    });
+});
+</script>
 <style>
 body {margin: 0;
       text-align:center;
@@ -240,12 +264,41 @@ svg.svg1{
     position:relative;
     left:25%;
 }
+.button:hover{
+    width:130px;
+    padding:12px;
+    background-color:slateblue;
+    opacity:0.8;
+    color:white;
+    text-align:center;
+    border-radius:50px;
+    position:relative;
+    left:25%;
+}
 .button1{
     background-color:transparent;
     font-size:16px;
     font-weight:100;
     border:none;
     color:white;
+}
+#a_silent:hover {
+  animation: shake 0.5s;
+  animation-iteration-count: 1;
+}
+
+@keyframes shake {
+  0% { transform: translate(2px, 0px) rotate(2deg); }
+  10% { transform: translate(-2px, 0px) rotate(-2deg); }
+  20% { transform: translate(2px, 0px) rotate(2deg); }
+  30% { transform: translate(-2px, 0px) rotate(-2deg); }
+  40% { transform: translate(2px, 0px) rotate(2deg); }
+  50% { transform: translate(-2px, 0px) rotate(-2deg); }
+  60% { transform: translate(2px, 0px) rotate(2deg); }
+  70% { transform: translate(-2px, 0px) rotate(-2deg); }
+  80% { transform: translate(2px, 0px) rotate(2deg); }
+  90% { transform: translate(-2px, 0px) rotate(-2deg); }
+  100% { transform: translate(2px, 0px) rotate(2deg); }
 }
 </style>
 </head>
@@ -272,9 +325,9 @@ svg.svg1{
     
 </svg>
 <div style="display:flex;flex-direction:column;position:relative;top:400px">
-    <div style="flex:35%;">
+    <div id="section_1" style="flex:35%;">
         <div class="image">
-            <p class="p_size_title_in_image" style="color:white; text-align:center;padding:0;margin:0;font-family:Verdana, Geneva, Tahoma, sans-serif;"> القصص</p>
+            <p id="count" class="p_size_title_in_image" style="color:white; text-align:center;padding:0;margin:0;font-family:Verdana, Geneva, Tahoma, sans-serif;"> القصص</p>
             <p class="p_size_content_in_image" style="color:white; text-align:center;padding:0;margin:0;font-family:Verdana, Geneva, Tahoma, sans-serif;">مجموعة متنوعة من القصص</p>
         </div>
         <div class="row_column store" style="justify-content:center;align-items:center;align-content:center;">
@@ -290,7 +343,7 @@ svg.svg1{
                     </div>
                     <div style="width:100%;height:auto;padding:0;flex:30%;">
                         <a href="#blank">
-                            <img src="imges/minaret.png"; class="image_size"/>
+                            <img id="a_silent" src="imges/minaret.png"; class="image_size"/>
                         </a>
                     </div>
                 </div>
@@ -300,7 +353,7 @@ svg.svg1{
                         <p class="p_size" style="font-family:Verdana, Geneva, Tahoma, sans-serif;padding-top:0;margin-top:0;">العديد من القصص الهادفة والتوعوية</p>
                     </div>
                         <a style="width:20%;padding:0;margin:0;flex:30%">
-                            <img src="imges/law.png"; class="image_size"/>
+                            <img id="a_silent" src="imges/law.png"; class="image_size"/>
                         </a>
                 </div>
                 <div class="row_column_item">
@@ -309,13 +362,13 @@ svg.svg1{
                         <p class="p_size" style="font-family:Verdana, Geneva, Tahoma, sans-serif;padding-top:0;margin-top:0;">مجموعة من القصص الممتعة والمسلية</p>
                     </div>
                         <a style="width:20%;padding:0;margin:0;flex:30%">
-                            <img src="imges/iconfinder_bookshelf_1055107.png"; class="image_size"/>
+                            <img id="a_silent" src="imges/iconfinder_bookshelf_1055107.png"; class="image_size"/>
                         </a>
                 </div>
             </div>
         </div>
     </div>
-    <div style="flex:35%;">
+    <div id="section_2" style="flex:35%;">
         <div class="image" >
             <p class="p_size_title_in_image" style="color:white; text-align:center;padding:0;margin:0;font-family:Verdana, Geneva, Tahoma, sans-serif;"> الأفلام</p>
             <p class="p_size_content_in_image" style="color:white; text-align:center;padding:0;margin:0;font-family:Verdana, Geneva, Tahoma, sans-serif;">مجموعة متنوعة من الأفلام</p>
@@ -337,7 +390,7 @@ svg.svg1{
             </div>
         </div> 
     </div>
-    <div style="flex:35%;">
+    <div id="section_3" style="flex:35%;">
         <div class="image">
             <p class="p_size_title_in_image" style="color:white; text-align:center;padding:0;margin:0;font-family:Verdana, Geneva, Tahoma, sans-serif;"> الأغاني</p>
             <p class="p_size_content_in_image" style="color:white; text-align:center;padding:0;margin:0;font-family:Verdana, Geneva, Tahoma, sans-serif;">مجموعة متنوعة من الأغاني</p>
@@ -408,5 +461,10 @@ svg.svg1{
             
 
     </form>
+    <script>
+        document.getElementById('section_1').hidden = true;
+        document.getElementById('section_2').hidden = true;
+        document.getElementById('section_3').hidden = true;
+    </script>
 </body>
 </html>
