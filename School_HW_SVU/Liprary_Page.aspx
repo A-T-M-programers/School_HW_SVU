@@ -254,26 +254,28 @@ svg.svg1{
     margin:5px;
 }
 .button{
+    box-shadow:0px 0px 15px 2px rgb(0 0 0 / 50%) inset;
     width:130px;
     padding:12px;
+    margin:0;
     background-color:royalblue;
     opacity:0.8;
     color:white;
+    box-sizing:border-box;
     text-align:center;
     border-radius:50px;
     position:relative;
-    left:25%;
 }
 .button:hover{
     width:130px;
     padding:12px;
-    background-color:slateblue;
-    opacity:0.8;
+    background-color:royalblue;
+    box-sizing:border-box ;
+    opacity:1;
     color:white;
     text-align:center;
     border-radius:50px;
     position:relative;
-    left:25%;
 }
 .button1{
     background-color:transparent;
@@ -388,6 +390,7 @@ svg.svg1{
                     <div class="video" style="flex:25%;margin-left:120px;"></div>
                     <div class="video" style="flex:25%;margin-right:120px;"></div>
             </div>
+            
         </div> 
     </div>
     <div id="section_3" style="flex:35%;">
@@ -409,10 +412,12 @@ svg.svg1{
                     <div>
                         <p style="opacity:0.8;color:black; text-align:center;font-size:20px;font-family:Verdana, Geneva, Tahoma, sans-serif;">أغانينا</p>
                     </div>
+                        <div style="width:100%;display:flex;justify-content:center;align-content:center;">
                     <div class="button">
                         <i class='fas fa-music' style='font-size:18px;color:white'></i>
                         <asp:Button runat="server" Text="للأستماع" CssClass="button1"/>
                     </div>
+                            </div>
                 </div>
             </div>
             <div class="music">
@@ -423,10 +428,12 @@ svg.svg1{
                     <div>
                         <p style="opacity:0.8;color:black; text-align:center;font-size:20px;font-family:Verdana, Geneva, Tahoma, sans-serif;">عالم مرح</p>
                     </div>
+                    <div style="width:100%;display:flex;justify-content:center;">
                     <div class="button">
                         <i class='fas fa-music' style='font-size:18px;color:white'></i>
                         <asp:Button runat="server" Text="للأستماع" CssClass="button1"/>
                     </div>
+                        </div>
                 </div>
             </div>
             <div class="music">
@@ -437,10 +444,12 @@ svg.svg1{
                     <div>
                         <p style="opacity:0.8;color:black; text-align:center;font-size:20px;font-family:Verdana, Geneva, Tahoma, sans-serif;">عالم مرح التعليمي</p>
                     </div>
+                    <div style="width:100%;display:flex;justify-content:center;">
                     <div class="button">
                         <i class='fas fa-music' style='font-size:18px;color:white'></i>
                         <asp:Button runat="server" Text="للأستماع" CssClass="button1"/>
                     </div>
+                        </div>
                 </div>
             </div>
         </div>
