@@ -70,8 +70,11 @@
     </Content>
     <Content Include="App_Data\school4.mdf" />
     <Content Include="App_Data\school4_log.ldf" />
+    <Content Include="imges\e.png" />
+    <Content Include="imges\whats.png" />
     <Content Include="defalt.aspx" />
     <Content Include="default.aspx" />
+    <Content Include="imges\111.jpg" />
     <Content Include="imges\22.jpeg" />
     <Content Include="imges\555.jpg" />
     <Content Include="imges\61H.jpg" />
