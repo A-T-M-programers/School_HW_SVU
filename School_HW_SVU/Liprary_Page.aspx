@@ -389,6 +389,7 @@ svg.svg1{
                     <div class="video"></div>
                     <div class="video" style="flex:25%;margin-left:120px;"></div>
                     <div class="video" style="flex:25%;margin-right:120px;"></div>
+
             </div>
             
         </div> 
