@@ -53,12 +53,12 @@ ul.topnav li a {
   display: block;
   color: white;
   text-align: center;
-  padding: 14px 16px;
+  padding: 14px 30px;
   text-decoration: none;
   font-size:24px;
 }
 
-ul.topnav li a:hover:not(.active) {background-color: #111;}
+ul.topnav li a:hover:not(.active) {background-color:#808080;}
 
 ul.topnav li a.active {background-color: #04AA6D;}
 
@@ -465,7 +465,9 @@ svg.svg1{
   <li><a href="WebForm2.aspx">الرئيسية</a></li>
   <li><a class="active" href="#news">المكتبة</a></li>
   <li><a href="#contact">التسجيل</a></li>
-    <li class="left"><a href="#about">حول</a></li>
+    <li ><a href="#about">حول</a></li>
+                <li class="left" ><a href="#"> تسجيل الدخول</a></li>
+
 </ul>
         </nav>
             

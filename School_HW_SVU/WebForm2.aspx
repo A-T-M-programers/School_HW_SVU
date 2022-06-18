@@ -5,70 +5,83 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="ar">
 <head runat="server">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>مدرسة المستقبل</title>
+    <title><مدرسة المستقبل</title>
     <style type="text/css">
          *{
              margin:0px;
              padding:0px;
-         }      
-
-
-        .style1{
-            background-image:url('imges/school.jpg');
-            background-size:cover;
-            background-attachment:scroll;
-            border:none;
+         } 
+         
+         .style1 {
+            border-style: none;
+            border-color: inherit;
+            border-width: medium;
+            background-image: url('imges/school.jpg');
+            background-size: cover;
+            background-attachment: scroll;
+            height: 500px;
+            box-shadow: #aeadad 5px 5px;
             
-            height:500px;
-            box-shadow:#aeadad 5px 5px;
+
+
+        
+     
+    }
+       
+            
+
+        .style1 h2{
+           font-family:Andalus;
+           text-align:right;
+           color:azure;
+           font-size:80px;
+           margin-right:60px;
+          padding-top:30;
+          margin-top: 53px;
         }
+          
+           
        .style1 p{
            color:aliceblue;
            font-size:25px;
            text-align:right;
            
            margin-right:30px;
+           margin-top:30;
            font-family:'Book Antiqua';
 
 
         }
-       .style1 h2{
-           font-family:Andalus;
-           text-align:right;
-           color:azure;
-           font-size:80px;
-           margin-right:60px;
-           
-       }
+       
+       
+       ul.first {
+  width:100%;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  position:absolute;
+  top:0;
+}
 
- 
+ ul.first li {float: right;}
+
+ul.first li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 30px;
+  text-decoration: none;
+  font-size:24px;
+}
         
-        .first{
-            font-size: 30px;
-            text-decoration: none;
-            color: #FFFFFF; 
-            text-align: right;
-            
-            font-family: Arial, Helvea, sticans-serif;
-            border:none; 
-            height:50px; 
-            background:linear-gradient(#161a17,aliceblue);
-            
-        }
-        .first a{
-            text-decoration: none;
-
-            font-family: Arial, Helvetica, sans-serif;
-            color: #FFFFFF;
-            font-size:24px;
-           padding: 14px 16px;
-            
-          
-        }
         .first a:hover{
-            background-color:#009999;
-            border-radius:4px 4px;
+            background-color: #808080;
+            
         }
+        ul.first li.left {float: left;}
+
         
         .container{
             position:relative;
@@ -114,181 +127,9 @@
         }
 
         
-     
-     
 
         
-
-        
-     
-
-        
-        
-        
-     
-
-        
-
-        
-     
-
-        
-        
-     
-
-        
-
-        
-     
-
-        
-        
-        
-     
-
-        
-
-        
-     
-
-        
-     
-
-        
-
-        
-     
-
-        
-        
-        
-     
-
-        
-
-        
-     
-
-        
-        .auto-style1 {
-            height: 186px;
-            margin-top: 20px;
-        }
-        
-
-        
-     
-        
-        
-        
-        
-     
-
-        
-
-        
-     
-
-        
-        
-     
-
-        
-
-        
-     
-
-        
-        
-        
-     
-
-        
-
-        
-     
-
-        
-     
-
-        
-
-        
-     
-
-        
-        
-        
-     
-
-        
-
-        
-     
-
-        
-                
-     
-
-        
-        .auto-style7 {
-            margin-left: 777px;
-        }
-
-        
-     
-
-        
-
-        
-     
-
-        
-        
-        
-     
-
-        
-
-        
-     
-
-        
-        
-     
-
-        
-
-        
-     
-
-        
-        
-        
-     
-
-        
-
-        
-     
-
-        
-     
-
-        
-
-        
-     
-
-        
-        
-        
-     
-
-        
-
-        
-     
+    
 
         
         .auto-style8 {
@@ -302,55 +143,7 @@
      
 
         
-
-        
      
-
-        
-        
-        
-     
-
-        
-
-        
-     
-
-        
-        
-     
-
-        
-
-        
-     
-
-        
-        
-        
-     
-
-        
-
-        
-     
-
-        
-     
-
-        
-
-        
-     
-
-        
-        
-        
-     
-
-        
-
-        
      
 
         
@@ -365,231 +158,14 @@
 
         
      
-
-        
-
-        
-     
-
-        
-        
-        
-     
-
-        
-
-        
-     
-
-        
-        
-     
-
-        
-
-        
-     
-
-        
-        
-        
-     
-
-        
-
-        
-     
-
-        
-     
-
-        
-
-        
-     
-
-        
-        
-        
-     
-
-        
-
-        
-     
-
-        
-        
-     
-
-        
-
-        
-     
-
-        
-        
-        
-     
-
-        
-
-        
-     
-
-        
-        
-     
-
-        
-
-        
-     
-
-        
-        
-        
-     
-
-        
-
-        
-     
-
-        
-     
-
-        
-
-        
-     
-
-        
-        
-        
-     
-
-        
-
-        
-     
-
-        
         .auto-style12 {
             margin-top: 0px;
             background:linear-gradient(#204534,#438e52);
             
         }
 
+      
         
-     
-
-        
-
-        
-     
-
-        
-        
-        
-     
-
-        
-
-        
-     
-
-        
-        
-     
-
-        
-     
-
-        
-        
-        
-     
-
-        
-
-        
-     
-
-        
-     
-
-        
-
-        
-     
-
-        
-        
-        
-     
-
-        
-
-        
-     
-
-        
-        
-     
-
-        
-
-        
-     
-
-        
-        
-        
-     
-
-        
-
-        
-     
-
-        
-        
-     
-
-        
-
-        
-     
-
-        
-        
-        
-     
-
-        
-
-        
-     
-
-        
-     
-
-        
-
-        
-     
-
-        
-        
-        
-     
-
-        
-
-        
-     
-
         
         .auto-style13 {
             background-image: url('imges/pens.png');
@@ -602,222 +178,9 @@
      
 
         
-
-        
      
 
         
-        
-        
-     
-
-        
-
-        
-     
-
-        
-        
-     
-
-        
-
-        
-     
-
-        
-        
-        
-     
-
-        
-
-        
-     
-
-        
-     
-
-        
-
-        
-     
-
-        
-        
-        
-     
-
-        
-
-        
-     
-
-        
-        
-     
-
-        
-
-        
-     
-
-        
-        
-        
-     
-
-        
-
-        
-     
-
-        
-        
-     
-
-        
-
-        
-     
-
-        
-        
-        
-     
-
-        
-
-        
-     
-
-        
-     
-
-        
-
-        
-     
-
-        
-        
-        
-     
-
-        
-
-        
-     
-
-        
-        
-     
-
-        
-
-        
-     
-
-        
-        
-        
-     
-
-        
-
-        
-     
-
-        
-        
-     
-
-        
-
-        
-     
-
-        
-        
-        
-     
-
-        
-
-        
-     
-
-        
-     
-
-        
-
-        
-     
-
-        
-        
-        
-     
-
-        
-
-        
-     
-
-        
-        
-     
-
-        
-
-        
-     
-
-        
-        
-        
-     
-
-        
-
-        
-     
-
-        
-        
-     
-
-        
-
-        
-     
-
-        
-        
-        
-     
-
-        
-
-        
-     
-
-        
-     
-
-        
-
-        
-     
-
-        
-        
-        
-     
-
-        
-
         
      
 
@@ -827,249 +190,51 @@
         }
 
         
-     
-
-        
-
-        
-     
-
-        
-        
-        
-     
-
-        
-
-        
-     
-
-        
-        
-     
-
-        
-
-        
-     
-
-        
-        
-        
-     
-
-        
-
-        
-     
-
-        
-     
-
-        
-
-        
-     
-
-        
-        
-        
-     
-
-        
-
-        
-     
-
-        
-        
-     
-
-        
-
-        
-     
-
-        
-        
-        
-     
-
-        
-
-        
-     
-
-        
-        
-     
-
-        
-
-        
-     
-
-        
-        
-        
-     
-
-        
-
-        
-     
-
-        
-     
-
-        
-
-        
-     
-
-        
-        
-        
-     
-
-        
-
-        
-     
-
-        
         .auto-style16 {
             width: 277px;
             height: 218px;
             margin-top: 0px;
         }
 
-        
-     
-
-        
 
         
      
+        
+            
 
-        
-        
-        
-     
-
-        
 
         
      
+        .auto-style17 {
+            margin-left: 728px;
+        }
 
-        
-        
-     
-
-        
-
-        
-     
-
-        
-        
-        
-     
-
-        
 
         
      
+        
+            
+
 
         
      
-
-        
-
-        
-     
-
-        
-        
-        
-     
-
-        
-
-        
-     
-
-        
-        
-     
-
-        
-
-        
-     
-
-        
-        
-        
-     
-
-        
-
-        
-     
-
-        
-        
-     
-
-        
-
-        
-     
-
-        
-        
-        
-     
-
-        
-
-        
-     
-
-        
-     
-
-        
-
-        
-     
-
-        
-        
-        
-     
-
-        
-
-        
-     
-
-        
     </style>
         
     
 </head>
 <body class="body1">
-        <div class="first" >
-            <a href="#" >الرئيسية</a>
-            <a href="Liprary_Page.aspx">المكتبة</a>
-            <a href="#" >التسجيل</a>
-        </div>
+        <ul class="first" >
+           <li> <a href="#" >الرئيسية</a></li>
+              <li> <a href="Liprary_Page.aspx">المكتبة</a></li>
+           <li> <a href="#" >التسجيل</a></li>
+            <li > <a href="#about">حول</a></li>
+            <li class="left" ><a href="#"> تسجيل الدخول</a></li>
+        </ul>
     <div class="style1" >
  
         
-        <h2>مدرسة المستقبل</h2>
+        <h2 >مدرسة المستقبل</h2>
+        
         <p>أهلا بأطفالنا الصغار في عالم المرح والمعرفة  
             
       
@@ -1134,9 +299,7 @@
     
     
         <div class="auto-style12" >
-            <h3 style="font-family: Aharoni; text-align: right; padding-top: 30px; padding-right: 50px; color: #FFFFFF; font-size:40px;">معلومات الاتصال</h3>
-            <br />
-            <table style="text-align: right;" class="auto-style7" >
+            <h3 style="font-family: Aharoni; text-align: right; padding-top: 30px; padding-right: 50px; color: #FFFFFF; font-size:40px;">معلومات الاتصال<table style="text-align: right;" class="auto-style17" >
                 <tr>
                                     <td class="auto-style15">            <p style="font-family: Andalus; font-size: 30px; text-align: right;  padding-right: 50px; color: #FFFFFF;">0966788058</p></td>
 
@@ -1152,10 +315,10 @@
                     
                     
                 </tr>
-                <tr >
-                   تابعونا على جميع صفحات التواصل الاجتماعي
-                </tr>
+               
            </table>
+            </h3>
+            <br />
             <img src="imges/المستقبل (2).png" class="auto-style16" />
 
         </div>
@@ -1168,3 +331,807 @@
     
 </body>
 </html>
+
+
+        
+        
+        
+     
+
+        
+
+        
+     
+
+        
+     
+
+        
+
+        
+     
+
+        
+        
+        
+     
+
+        
+
+        
+     
+
+        
+                
+     
+
+        
+     
+
+        
+
+        
+     
+
+        
+        
+        
+     
+
+        
+
+        
+     
+
+        
+        
+     
+
+        
+
+        
+     
+
+        
+        
+        
+     
+
+        
+
+        
+     
+
+        
+     
+
+        
+
+        
+     
+
+        
+        
+        
+     
+
+        
+
+        
+     
+
+        
+
+        
+
+        
+     
+
+        
+        
+        
+     
+
+        
+
+        
+     
+
+        
+        
+     
+
+        
+
+        
+     
+
+        
+        
+        
+     
+
+        
+
+        
+     
+
+        
+     
+
+        
+
+        
+     
+
+        
+        
+        
+     
+
+        
+
+        
+
+        
+
+        
+     
+
+        
+        
+        
+     
+
+        
+
+        
+     
+
+        
+        
+     
+
+        
+
+        
+     
+
+        
+        
+        
+     
+
+        
+
+        
+     
+
+        
+     
+
+        
+
+        
+     
+
+        
+        
+        
+     
+
+        
+
+        
+     
+
+        
+        
+     
+
+        
+
+        
+     
+
+        
+        
+        
+     
+
+        
+
+        
+     
+
+        
+        
+     
+
+        
+
+        
+     
+
+        
+        
+        
+     
+
+        
+
+        
+     
+
+        
+     
+
+        
+
+        
+     
+
+        
+        
+        
+     
+
+        
+
+        
+     
+
+        
+     
+
+        
+
+        
+     
+
+        
+        
+        
+     
+
+        
+
+        
+     
+
+        
+        
+     
+
+        
+     
+
+        
+        
+        
+     
+
+        
+
+        
+     
+
+        
+     
+
+        
+
+        
+     
+
+        
+        
+        
+     
+
+        
+
+        
+     
+
+        
+        
+     
+
+        
+
+        
+     
+
+        
+        
+        
+     
+
+        
+
+        
+     
+
+        
+        
+     
+
+        
+
+        
+     
+
+        
+        
+        
+     
+
+        
+
+        
+     
+
+        
+     
+
+        
+
+        
+     
+
+        
+        
+        
+     
+
+        
+
+        
+     
+
+
+        
+
+        
+     
+
+        
+        
+        
+     
+
+        
+
+        
+     
+
+        
+        
+     
+
+        
+
+        
+     
+
+        
+        
+        
+     
+
+        
+
+        
+     
+
+        
+     
+
+        
+
+        
+     
+
+        
+        
+        
+     
+
+        
+
+        
+     
+
+        
+        
+     
+
+        
+
+        
+     
+
+        
+        
+        
+     
+
+        
+
+        
+     
+
+        
+        
+     
+
+        
+
+        
+     
+
+        
+        
+        
+     
+
+        
+
+        
+     
+
+        
+     
+
+        
+
+        
+     
+
+        
+        
+        
+     
+
+        
+
+        
+     
+
+        
+        
+     
+
+        
+
+        
+     
+
+        
+        
+        
+     
+
+        
+
+        
+     
+
+        
+        
+     
+
+        
+
+        
+     
+
+        
+        
+        
+     
+
+        
+
+        
+     
+
+        
+     
+
+        
+
+        
+     
+
+        
+        
+        
+     
+
+        
+
+        
+     
+
+        
+        
+     
+
+        
+
+        
+     
+
+        
+        
+        
+     
+
+        
+
+        
+     
+
+        
+        
+     
+
+        
+
+        
+     
+
+        
+        
+        
+     
+
+        
+
+        
+     
+
+        
+     
+
+        
+
+        
+     
+
+        
+        
+        
+     
+
+        
+
+        
+     
+
+        
+     
+
+        
+
+        
+     
+
+        
+        
+        
+     
+
+        
+
+        
+     
+
+        
+        
+     
+
+        
+
+        
+     
+
+        
+        
+        
+     
+
+        
+
+        
+     
+
+        
+     
+
+        
+
+        
+     
+
+        
+        
+        
+     
+
+        
+
+        
+     
+
+        
+        
+     
+
+        
+
+        
+     
+
+        
+        
+        
+     
+
+        
+
+        
+     
+
+        
+        
+     
+
+        
+
+        
+     
+
+        
+        
+        
+     
+
+        
+
+        
+     
+
+        
+     
+
+        
+
+        
+     
+
+        
+        
+        
+     
+
+        
+
+        
+     
+
+        
+        
+     
+
+        
+
+        
+     
+
+        
+        
+        
+     
+
+        
+
+        
+     
+
+        
+        
+     
+
+        
+
+        
+     
+
+        
+        
+        
+     
+
+        
+
+        
+     
+
+        
+     
+
+        
+
+        
+     
+
+        
+        
+        
+     
+
+        
+
+        
+     
+
+        
+        
+     
+
+        
+
+        
+     
+
+        
+        
+        
+     
+
+        
+
+        
+     
+
+        
+        
+     
+
+        
+
+        
+     
+
+        
+        
+        
+     
+
+        
+
+        
+     
+
+        
+     
+
+        
+
+        
+     
+
+        
+        
+        
+     
+
+        
+
+        
+     
+
+        
