@@ -129,6 +129,45 @@ svg.height_svg{
     height:300px;
     margin:20px;
     border-radius:20px;
+    background-repeat:no-repeat;
+    background-size:100% 100%;
+    background-color:transparent;
+    box-shadow: 0px -200px 500px white inset;
+    opacity:0.8;
+}
+.video:hover {
+    background-color:dodgerblue;
+    width:300px;
+    height:300px;
+    margin:20px;
+    border-radius:20px;
+    background-repeat:no-repeat;
+    background-size:100% 100%;
+    background-color:transparent;
+    box-shadow: 0px -200px 800px white inset;
+    opacity:1;
+}
+p.p2{
+    margin:0px;
+    border:0px;
+    width:100%;
+    height:auto;
+    text-align:center;
+    font-size: 20px;
+    font-weight:600;
+    text-transform: uppercase;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+p.p3{
+    margin:0px;
+    border:0px;
+    width:100%;
+    height:auto;
+    text-align:center;
+    font-size: 18px;
+    font-weight:500;
+    text-transform: uppercase;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 @media screen and (max-width: 600px) {
   ul.topnav li.left, 
@@ -165,6 +204,33 @@ svg.height_svg{
     height:150px;
     margin:20px;
     border-radius:20px;
+    background-repeat:no-repeat;
+    background-size:100% 100%;
+    background-color:transparent;
+    box-shadow: 0px -200px 500px white inset;
+    opacity:0.8;
+}
+  p.p2{
+    margin:0px;
+    border:0px;
+    width:100%;
+    height:auto;
+    text-align:center;
+    font-size: 12px;
+    font-weight:600;
+    text-transform: uppercase;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+p.p3{
+    margin:0px;
+    border:0px;
+    width:100%;
+    height:auto;
+    text-align:center;
+    font-size: 10px;
+    font-weight:500;
+    text-transform: uppercase;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 }
 
@@ -302,6 +368,17 @@ svg.svg1{
   90% { transform: translate(-2px, 0px) rotate(-2deg); }
   100% { transform: translate(2px, 0px) rotate(2deg); }
 }
+.a1:hover{
+  animation: shake1 1.0s;
+  animation-iteration-count: infinite;
+}
+@keyframes shake1 {
+  0% { transform: translate(0px, 4px) rotate(0deg); }
+  25% { transform: translate(0px, 0px) rotate(0deg); }
+  50% { transform: translate(0px, -4px) rotate(0deg); }
+  75% { transform: translate(0px, 0px) rotate(0deg); }
+  100% { transform: translate(0px, 4px) rotate(0deg); }
+}
 </style>
 </head>
 <body>
@@ -381,18 +458,18 @@ svg.svg1{
         </div>
         <div style="background-color:white;width:100%;position:relative;top:50px;justify-content:center;display:flex;margin-bottom:50px;">
             <div style="position:relative;width:100%;height:auto;display:flex;justify-content:center;flex-wrap:wrap;">
-                <div class="video"></div>
-                    <div class="video"></div>
-                    <div class="video"></div>
-                    <div class="video"></div>
-                    <div class="video"></div>
-                    <div class="video"></div>
-                    <div class="video" style="flex:25%;margin-left:120px;"></div>
-                    <div class="video" style="flex:25%;margin-right:120px;"></div>
+                    <%this.Select_vedio();%>
 
             </div>
             
         </div> 
+        <div>
+            <div style="width:100%;display:flex;justify-content:center;">
+                    <div class="button">
+                        <asp:Button ID="Button1" runat="server" Text="إضافة" CssClass="button1" OnClick="Button1_Click"/>
+                    </div>
+                        </div>
+        </div>
     </div>
     <div id="section_3" style="flex:35%;">
         <div class="image">
