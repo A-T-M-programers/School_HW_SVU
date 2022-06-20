@@ -64,24 +64,29 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App_Data\Database1.mdf" />
+    <Content Include="App_Data\Database1.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="App_Data\Database1_log.ldf">
       <DependentUpon>Database1.mdf</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="App_Data\school4.mdf" />
-    <Content Include="App_Data\school4_log.ldf" />
+    <Content Include="imges\e.png" />
+    <Content Include="imges\whats.png" />
     <Content Include="defalt.aspx" />
     <Content Include="default.aspx" />
-    <Content Include="imges\324.jpg" />
-    <Content Include="imges\cc.jpg" />
+    <Content Include="imges\111.jpg" />
+    <Content Include="imges\22.jpeg" />
+    <Content Include="imges\555.jpg" />
     <Content Include="imges\61H.jpg" />
     <Content Include="imges\ADNOC-School-SAN-Branch-C-03-02-1024x640AR.jpg" />
+    <Content Include="imges\bus.gif" />
     <Content Include="imges\Child_paly_on_phone3.jpg" />
-    <Content Include="imges\888.jpg" />
+    <Content Include="imges\download %281%29.jpg" />
     <Content Include="imges\download %282%29.jpg" />
     <Content Include="imges\download.jpg" />
     <Content Include="imges\images %281%29.jpg" />
-    <Content Include="imges\666.jpg" />
+    <Content Include="imges\images %282%29.jpg" />
     <Content Include="imges\images.jpg" />
     <Content Include="imges\pngtree-school-building-background-design-image_389461.jpg" />
     <Content Include="imges\pngtree-school-season-teaching-building-background-material-buildingteachers-daycampusbuildingclassroomopening-season-image_66055.jpg" />
@@ -95,16 +100,16 @@
     <Content Include="imges\pens.png" />
     <Content Include="imges\photo.jpg" />
     <Content Include="imges\school.jpg" />
+    <Content Include="Insert_Item_To_Liprary.aspx" />
     <Content Include="Liprary_Page.aspx" />
     <Content Include="imges\sh.png" />
     <Content Include="imges\المستقبل %282%29.png" />
-    <Content Include="web 55.aspx" />
     <Content Include="Web.config" />
     <Content Include="WebForm1.aspx" />
     <Content Include="WebForm2.aspx" />
-    <Content Include="WebForm3.aspx" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DataAccessLayer.cs" />
     <Compile Include="defalt.aspx.cs">
       <DependentUpon>defalt.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -119,6 +124,13 @@
     <Compile Include="default.aspx.designer.cs">
       <DependentUpon>default.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Insert_Item_To_Liprary.aspx.cs">
+      <DependentUpon>Insert_Item_To_Liprary.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Insert_Item_To_Liprary.aspx.designer.cs">
+      <DependentUpon>Insert_Item_To_Liprary.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Liprary_Page.aspx.cs">
       <DependentUpon>Liprary_Page.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -127,13 +139,6 @@
       <DependentUpon>Liprary_Page.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="web 55.aspx.cs">
-      <DependentUpon>web 55.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="web 55.aspx.designer.cs">
-      <DependentUpon>web 55.aspx</DependentUpon>
-    </Compile>
     <Compile Include="WebForm1.aspx.cs">
       <DependentUpon>WebForm1.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -148,13 +153,6 @@
     <Compile Include="WebForm2.aspx.designer.cs">
       <DependentUpon>WebForm2.aspx</DependentUpon>
     </Compile>
-    <Compile Include="WebForm3.aspx.cs">
-      <DependentUpon>WebForm3.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="WebForm3.aspx.designer.cs">
-      <DependentUpon>WebForm3.aspx</DependentUpon>
-    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
@@ -165,7 +163,9 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="image_liprary\" />
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

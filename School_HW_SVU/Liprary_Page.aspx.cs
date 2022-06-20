@@ -4,6 +4,8 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using System.Data.SqlClient;
+using System.Configuration;
 
 namespace School_HW_SVU
 {
@@ -13,5 +15,44 @@ namespace School_HW_SVU
         {
 
         }
+        public string Select_vedio()
+        {
+            DataAccessLayer dataAccessLayer = new DataAccessLayer();
+            var posts = dataAccessLayer.SelectData("Select * from Liprary");
+            for (int i = 0; i < posts.Rows.Count; i++)
+            {
+                int postId = Convert.ToInt32(posts.Rows[i][0]);
+                Response.Write("<div class='video' style='background-image: url(image_liprary/"+ posts.Rows[i][4]+"'); >");
+                Response.Write("<div class='row' style='justify-content:center; top:70%; left:20%; position:relative; background-color:transparent; width:60%; margin:0px; '>");
+                Response.Write("<div style='flex:70%;'>");
+                Response.Write("<p class='p2'>"+posts.Rows[i][2]+"</p>");
+                Response.Write("<p class='p3'>"+posts.Rows[i][3]+" الحلقة</p>");
+                Response.Write("</div><div style='flex:30%;'>");
+                Response.Write("<a href="+posts.Rows[i][5]+"> ");
+                Response.Write("<div class='a1' style='background-image: url(imges/YouTube.png); background-size:100% 100%; background-repeat:no-repeat;background-color:transparent;position:relative;width:50px; height:35px; '></div>");
+                Response.Write("</a></div></div></div>");
+                //if (Convert.ToString(Session["UserDept"]) != "Admin")
+                //{
+                //    Response.Write($" <form action='Comment.aspx' method='get'> <div class='form-group'> </div>");
+                //    Response.Write($"<a href='Comment.aspx'>  <button type='submit' value='{postId}' name='b' class='btn btn-primary'>Submit</button></a>  </form> </div> </div>");
+                //}
+                //var comments = dataAccessLayer.SelectData($"Select * from TBLComments where CMIDPost = {postId}");
+                //for (int j = 0; j < comments.Rows.Count; j++)
+                //{
+                //    Response.Write(" <div class='media mb-4'> <div class='media-body'>");
+                //    Response.Write(" <h5 class='mt-0'>" + comments.Rows[j][1].ToString() + "</h5>");
+                //    Response.Write(comments.Rows[j][2].ToString());
+
+                //}
+                //Response.Write(" </div> </div> </div> </div>");
+            }
+            return "";
+        }
+
+        protected void Button1_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("Insert_Item_To_Liprary.aspx");
+        }
     }
+    
 }
