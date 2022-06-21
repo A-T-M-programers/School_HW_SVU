@@ -71,7 +71,10 @@
       <DependentUpon>Database1.mdf</DependentUpon>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="imges\324.jpg" />
+    <Content Include="App_Data\Database2.mdf" />
+    <Content Include="App_Data\Database2_log.ldf">
+      <DependentUpon>Database2.mdf</DependentUpon>
+    </Content>
     <Content Include="imges\e.png" />
     <Content Include="imges\whats.png" />
     <Content Include="defalt.aspx" />
@@ -108,7 +111,6 @@
     <Content Include="Web.config" />
     <Content Include="WebForm1.aspx" />
     <Content Include="WebForm2.aspx" />
-    <Content Include="WebForm3.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DataAccessLayer.cs" />
@@ -154,13 +156,6 @@
     </Compile>
     <Compile Include="WebForm2.aspx.designer.cs">
       <DependentUpon>WebForm2.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="WebForm3.aspx.cs">
-      <DependentUpon>WebForm3.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="WebForm3.aspx.designer.cs">
-      <DependentUpon>WebForm3.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
