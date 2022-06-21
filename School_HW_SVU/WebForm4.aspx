@@ -40,8 +40,9 @@ text-align: center;
                  <input id="Password" type="password" Height="16px" /><br />
             </div>
              <div style="margin-left: 0px">
-                <asp:Label ID="Label21" runat="server" Text="تأكيد كلمة المرور"></asp:Label><br />
-               <input id="conPassword" type="password" Height="16px" /><br />
+                 <br />
+                 <asp:Button ID="Button1" runat="server" Text="تسجيل دخول" />
+                 <br />
             </div>
             </div>
     </form>

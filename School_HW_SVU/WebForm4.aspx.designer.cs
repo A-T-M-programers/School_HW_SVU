@@ -7,11 +7,13 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace School_HW_SVU {
-    
-    
-    public partial class WebForm4 {
-        
+namespace School_HW_SVU
+{
+
+
+    public partial class WebForm4
+    {
+
         /// <summary>
         /// form1 control.
         /// </summary>
@@ -20,7 +22,7 @@ namespace School_HW_SVU {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
-        
+
         /// <summary>
         /// Label19 control.
         /// </summary>
@@ -29,7 +31,7 @@ namespace School_HW_SVU {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label Label19;
-        
+
         /// <summary>
         /// uname control.
         /// </summary>
@@ -38,7 +40,7 @@ namespace School_HW_SVU {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox uname;
-        
+
         /// <summary>
         /// Label20 control.
         /// </summary>
@@ -47,14 +49,14 @@ namespace School_HW_SVU {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label Label20;
-        
+
         /// <summary>
-        /// Label21 control.
+        /// Button1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label21;
+        protected global::System.Web.UI.WebControls.Button Button1;
     }
 }
