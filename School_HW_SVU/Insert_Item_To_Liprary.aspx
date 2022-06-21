@@ -27,21 +27,26 @@
             <asp:Label ID="Label3" runat="server" Text="عدد الحلقات او الصفحات :"></asp:Label>
             <asp:TextBox ID="TextBox3" runat="server" TextMode="Number" Width="43px"></asp:TextBox>
             &nbsp;
-            <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="TextBox2" ErrorMessage="حقل فارغ" EnableClientScript="False" ForeColor="Red"></asp:RequiredFieldValidator>
+            <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="TextBox3" ErrorMessage="حقل فارغ" EnableClientScript="False" ForeColor="Red"></asp:RequiredFieldValidator>
             <br />
             <asp:Label ID="Label4" runat="server" Text="الصورة :"></asp:Label>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="أختيار صورة" />
-            <br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;<asp:FileUpload ID="FileUpload1" runat="server" />
+&nbsp;<asp:Panel ID="Panel1" runat="server" Visible="False">
+                <asp:Label ID="Label6" runat="server"></asp:Label>
+            </asp:Panel>
+            &nbsp;<br />
             <asp:Label ID="Label5" runat="server" Text="الرابط :"></asp:Label>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <asp:TextBox ID="TextBox2" runat="server"></asp:TextBox>
             &nbsp;
-            <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ControlToValidate="TextBox3" ErrorMessage="حقل فارغ" EnableClientScript="False" ForeColor="Red"></asp:RequiredFieldValidator>
+            <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ControlToValidate="TextBox2" ErrorMessage="حقل فارغ" EnableClientScript="False" ForeColor="Red"></asp:RequiredFieldValidator>
             <br />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <asp:Button ID="Button2" runat="server" Text="أدخال " OnClick="Button2_Click" />
         </div>
     </form>
+    <p style="direction: ltr">
+        &nbsp;</p>
 </body>
 </html>

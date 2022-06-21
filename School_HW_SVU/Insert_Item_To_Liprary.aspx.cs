@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using System.IO;
 
 namespace School_HW_SVU
 {
@@ -16,7 +17,38 @@ namespace School_HW_SVU
 
         protected void Button1_Click(object sender, EventArgs e)
         {
-
+            string strFileName;
+            string strFilePath;
+            string strFolder;
+            strFolder = Server.MapPath("./image_liprary/");
+            // Get the name of the file that is posted.
+            strFileName = FileUpload1.PostedFile.FileName;
+            strFileName = Path.GetFileName(strFileName);
+            if (FileUpload1.FileName != "")
+            {
+                // Create the directory if it does not exist.
+                if (!Directory.Exists(strFolder))
+                {
+                    Directory.CreateDirectory(strFolder);
+                }
+                // Save the uploaded file to the server.
+                strFilePath = strFolder + strFileName;
+                if (File.Exists(strFilePath))
+                {
+                    Label6.Text = strFileName + " already exists on the server!";
+                }
+                else
+                {
+                    FileUpload1.PostedFile.SaveAs(strFilePath);
+                    Label6.Text = strFileName + " has been successfully uploaded.";
+                }
+            }
+            else
+            {
+                Label6.Text = "Click 'Browse' to select the file to upload.";
+            }
+            // Display the result of the upload.
+            Panel1.Visible = true;
         }
 
         protected void Button2_Click(object sender, EventArgs e)
