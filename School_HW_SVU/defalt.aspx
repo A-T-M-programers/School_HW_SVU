@@ -17,8 +17,8 @@ text-align: center;
   border: 10px solid darkmagenta;
   margin-top: 137px;
   margin-bottom: 50px;
-  margin-right: 50px;
-  margin-left:50px;
+  margin-right: 100px;
+  margin-left:100px;
   background-color:darkmagenta;
 }
        
@@ -36,7 +36,7 @@ text-align: center;
           .background{
               background-image: url('imges/61H.jpg');
               background-size:cover;
-              background-repeat:no-repeat;
+              background-repeat:repeat;
               position:absolute;
               color:blue;
                }
@@ -223,18 +223,7 @@ text-align: center;
                 <asp:Label ID="Label22" runat="server" Text="رسالتك او سؤالك للمدرسة"></asp:Label><br />
                 <asp:ListBox ID="ListBox3" runat="server" Width="384px"></asp:ListBox>
             </div>
-            <div>
-                <asp:Label ID="Label19" runat="server" Text="اسم المستخدم"></asp:Label><br />
-                <asp:TextBox ID="uname" runat="server" Width="381px" Height="16px"></asp:TextBox><br />
-            </div>
-             <div>
-                <asp:Label ID="Label20" runat="server" Text="كلمة المرور"></asp:Label><br />
-                 <input id="Password" type="password" Height="16px" /><br />
-            </div>
-             <div>
-                <asp:Label ID="Label21" runat="server" Text="تأكيد كلمة المرور"></asp:Label><br />
-               <input id="conPassword" type="password" Height="16px" /><br />
-            </div>
+           
          <input id="Submit1" type="submit" value="سجل الأن" />
         </form>
         </div>

@@ -11,8 +11,8 @@ text-align: center;
   border: 10px solid brown;
   margin-top: 400px;
   margin-bottom: 100px;
-  margin-right: 400px;
-  margin-left:400px;
+  margin-right: 300px;
+  margin-left:300px;
   background-color:lavenderblush;
 }
         body{
@@ -33,11 +33,11 @@ text-align: center;
         <div class="form-content" >
         <div>
                 <asp:Label ID="Label19" runat="server" Text="اسم المستخدم"></asp:Label><br />
-                <asp:TextBox ID="uname" runat="server" Width="381px" Height="16px"></asp:TextBox><br />
+                <asp:TextBox ID="uname" runat="server" Width="100px" Height="16px"></asp:TextBox><br />
             </div>
              <div>
                 <asp:Label ID="Label20" runat="server" Text="كلمة المرور"></asp:Label><br />
-                 <input id="Password" type="password" Height="16px" /><br />
+                 <input id="Password" type="password" Height="16px" Width="100px"/><br />
             </div>
              <div style="margin-left: 0px">
                  <br />
