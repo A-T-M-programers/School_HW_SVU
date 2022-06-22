@@ -31,20 +31,6 @@ namespace School_HW_SVU
                 Response.Write("<a href="+posts.Rows[i][5]+"> ");
                 Response.Write("<div class='a1' style='background-image: url(imges/YouTube.png); background-size:100% 100%; background-repeat:no-repeat;background-color:transparent;position:relative;width:50px; height:35px; '></div>");
                 Response.Write("</a></div></div></div>");
-                //if (Convert.ToString(Session["UserDept"]) != "Admin")
-                //{
-                //    Response.Write($" <form action='Comment.aspx' method='get'> <div class='form-group'> </div>");
-                //    Response.Write($"<a href='Comment.aspx'>  <button type='submit' value='{postId}' name='b' class='btn btn-primary'>Submit</button></a>  </form> </div> </div>");
-                //}
-                //var comments = dataAccessLayer.SelectData($"Select * from TBLComments where CMIDPost = {postId}");
-                //for (int j = 0; j < comments.Rows.Count; j++)
-                //{
-                //    Response.Write(" <div class='media mb-4'> <div class='media-body'>");
-                //    Response.Write(" <h5 class='mt-0'>" + comments.Rows[j][1].ToString() + "</h5>");
-                //    Response.Write(comments.Rows[j][2].ToString());
-
-                //}
-                //Response.Write(" </div> </div> </div> </div>");
             }
             return "";
         }

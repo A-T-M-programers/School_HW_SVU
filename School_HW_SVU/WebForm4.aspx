@@ -33,15 +33,15 @@ text-align: center;
         <div class="form-content" >
         <div>
                 <asp:Label ID="Label19" runat="server" Text="اسم المستخدم"></asp:Label><br />
-                <asp:TextBox ID="uname" runat="server" Width="100px" Height="16px"></asp:TextBox><br />
+                <asp:TextBox ID="uname" runat="server" Width="100px" Height="16px" required></asp:TextBox><br />
             </div>
              <div>
                 <asp:Label ID="Label20" runat="server" Text="كلمة المرور"></asp:Label><br />
-                 <input id="Password" type="password" Height="16px" Width="100px"/><br />
+                 <asp:TextBox ID="Password" runat="server" type="password" Height="16px" Width="100px" required></asp:TextBox><br />
             </div>
              <div style="margin-left: 0px">
                  <br />
-                 <asp:Button ID="Button1" runat="server" Text="تسجيل دخول" />
+                 <asp:Button ID="Button1" runat="server" Text="تسجيل دخول" OnClick="Button1_Click" />
                  <br />
             </div>
             </div>
