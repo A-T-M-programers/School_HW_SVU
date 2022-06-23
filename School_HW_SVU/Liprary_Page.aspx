@@ -65,7 +65,7 @@ ul.topnav li a.active {background-color: #04AA6D;}
 ul.topnav li.left {float: left;}
 
 svg.height_svg{
-    height:300px;
+    height:350px;
 }
 .row_column{
     display:flex;
@@ -169,6 +169,14 @@ p.p3{
     text-transform: uppercase;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
+svg.svg1{
+    margin:0px;
+    border:0px;
+    width:100%;
+    position:absolute;
+    top:-40px;
+    left:0px;
+}
 @media screen and (max-width: 600px) {
   ul.topnav li.left, 
   ul.topnav li {float: none;}
@@ -232,6 +240,14 @@ p.p3{
     text-transform: uppercase;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
+svg.svg1{
+    margin:0px;
+    border:0px;
+    width:100%;
+    position:absolute;
+    top:0px;
+    left:0px;
+}
 }
 
 img.img1{
@@ -293,14 +309,6 @@ p.p1 {
 }
 b.n1{
     color:deepskyblue;
-}
-svg.svg1{
-    margin:0px;
-    border:0px;
-    width:100%;
-    position:absolute;
-    top:0px;
-    left:0px;
 }
 .row{
     display:flex;
@@ -379,6 +387,30 @@ svg.svg1{
   75% { transform: translate(0px, 0px) rotate(0deg); }
   100% { transform: translate(0px, 4px) rotate(0deg); }
 }
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  left:50%;
+  top:50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+.container:hover {
+  opacity: 0.3;
+}
+
+.container:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  background-color: green;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+}
 </style>
 </head>
 <body>
@@ -421,7 +453,7 @@ svg.svg1{
                         <p class="p_size" style="font-family:Verdana, Geneva, Tahoma, sans-serif;padding-top:0;margin-top:0;">مكتبة متنوعة من قصص السيرة والأنبياء</p>
                     </div>
                     <div style="width:100%;height:auto;padding:0;flex:30%;">
-                        <a href="#blank">
+                        <a href="image_liprary/الخائف.pdf">
                             <img id="a_silent" src="imges/minaret.png"; class="image_size"/>
                         </a>
                     </div>
@@ -431,7 +463,7 @@ svg.svg1{
                         <h4 class="h4_size" style="font-family:Verdana, Geneva, Tahoma, sans-serif;color:#212121;opacity:0.8;padding-bottom:0;margin-bottom:0;">قصص تربوية</h4>
                         <p class="p_size" style="font-family:Verdana, Geneva, Tahoma, sans-serif;padding-top:0;margin-top:0;">العديد من القصص الهادفة والتوعوية</p>
                     </div>
-                        <a style="width:20%;padding:0;margin:0;flex:30%">
+                        <a href="image_liprary/الشجاع.pdf" style="width:20%;padding:0;margin:0;flex:30%">
                             <img id="a_silent" src="imges/law.png"; class="image_size"/>
                         </a>
                 </div>
@@ -440,7 +472,7 @@ svg.svg1{
                         <h4 class="h4_size" style="font-family:Verdana, Geneva, Tahoma, sans-serif;color:#212121;opacity:0.8;padding-bottom:0;margin-bottom:0;">قصص ترفيهية</h4>
                         <p class="p_size" style="font-family:Verdana, Geneva, Tahoma, sans-serif;padding-top:0;margin-top:0;">مجموعة من القصص الممتعة والمسلية</p>
                     </div>
-                        <a style="width:20%;padding:0;margin:0;flex:30%">
+                        <a href="image_liprary/لماذا نتعارك.pdf" style="width:20%;padding:0;margin:0;flex:30%">
                             <img id="a_silent" src="imges/iconfinder_bookshelf_1055107.png"; class="image_size"/>
                         </a>
                 </div>
@@ -501,9 +533,9 @@ svg.svg1{
 <ul class="topnav">
   <li><a href="WebForm2.aspx">الرئيسية</a></li>
   <li><a class="active" href="#news">المكتبة</a></li>
-  <li><a href="#contact">التسجيل</a></li>
+  <li><a href="defalt.aspx">التسجيل</a></li>
     <li ><a href="#about">حول</a></li>
-                <li class="left" ><a href="#"> تسجيل الدخول</a></li>
+                <li class="left" ><a href="WebForm4.aspx"> تسجيل الدخول</a></li>
 
 </ul>
         </nav>

@@ -64,6 +64,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Delete_Item_To_Liprary.aspx" />
     <Content Include="imges\e.png" />
     <Content Include="imges\whats.png" />
     <Content Include="defalt.aspx" />
@@ -117,6 +118,13 @@
     </Compile>
     <Compile Include="default.aspx.designer.cs">
       <DependentUpon>default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Delete_Item_To_Liprary.aspx.cs">
+      <DependentUpon>Delete_Item_To_Liprary.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Delete_Item_To_Liprary.aspx.designer.cs">
+      <DependentUpon>Delete_Item_To_Liprary.aspx</DependentUpon>
     </Compile>
     <Compile Include="Insert_Item_To_Liprary.aspx.cs">
       <DependentUpon>Insert_Item_To_Liprary.aspx</DependentUpon>

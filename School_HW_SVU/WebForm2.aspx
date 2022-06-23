@@ -217,18 +217,26 @@ ul.first li a {
 
 
         
-     
+     ul.a {
+  list-style-type: circle;
+  position:absolute;
+  font-size:30px;
+  color:white;
+  left:5%;
+  top:10%;
+}
     </style>
         
     
 </head>
 <body class="body1">
+        <form id="form1" runat="server">
         <ul class="first" >
            <li> <a href="#" >الرئيسية</a></li>
               <li> <a href="Liprary_Page.aspx">المكتبة</a></li>
-           <li> <a href="#" >التسجيل</a></li>
+           <li> <a href="defalt.aspx" >التسجيل</a></li>
             <li > <a href="#about">حول</a></li>
-            <li class="left" ><a href="#"> تسجيل الدخول</a></li>
+            <li class="left" ><a href="WebForm4.aspx"> تسجيل الدخول</a></li>
         </ul>
     <div class="style1" >
  
@@ -320,10 +328,22 @@ ul.first li a {
             </h3>
             <br />
             <img src="imges/المستقبل (2).png" class="auto-style16" />
+            <ul class="a">
+  <li>توفيق داود</li>
+  <li>دعاء القباني</li>
+  <li>إيناث الدرخباني</li>
+  <li>بشرى الترجمان</li>
+</ul>
 
         </div>
                 
         <br />
+
+     
+
+    
+    
+        </form>
 
      
 
