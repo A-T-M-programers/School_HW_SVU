@@ -15,16 +15,16 @@ namespace School_HW_SVU
 
         }
 
-        protected void Button1_Click(object sender, EventArgs e)
+        protected void Button2_Click(object sender, EventArgs e)
         {
             string strFileName;
             string strFilePath;
             string strFolder;
             strFolder = Server.MapPath("./image_liprary/");
             // Get the name of the file that is posted.
-            strFileName = FileUpload1.PostedFile.FileName;
+            strFileName = File1.PostedFile.FileName;
             strFileName = Path.GetFileName(strFileName);
-            if (FileUpload1.FileName != "")
+            if (File1.Value != "")
             {
                 // Create the directory if it does not exist.
                 if (!Directory.Exists(strFolder))
@@ -39,7 +39,7 @@ namespace School_HW_SVU
                 }
                 else
                 {
-                    FileUpload1.PostedFile.SaveAs(strFilePath);
+                    File1.PostedFile.SaveAs(strFilePath);
                     Label6.Text = strFileName + " has been successfully uploaded.";
                 }
             }
@@ -49,13 +49,17 @@ namespace School_HW_SVU
             }
             // Display the result of the upload.
             Panel1.Visible = true;
-        }
-
-        protected void Button2_Click(object sender, EventArgs e)
-        {
-            if(TextBox1.Text !=null && TextBox2.Text != null && TextBox3.Text != null)
+            if (TextBox1.Text !=null && TextBox2.Text != null && TextBox3.Text != null)
             {
-
+                    DataAccessLayer dataAccessLayer = new DataAccessLayer();
+                    dataAccessLayer.Open();
+                    int success = dataAccessLayer.InsertStudent(@"INSERT INTO  [db_a88d49_tofiqdaowdsvu].[dbo].[Liprary] values(N'" + DropDownList1.SelectedValue + "' , N'" + TextBox1.Text + "' , N'" + TextBox3.Text + "' , N'" + strFileName + "' , N'" + TextBox2.Text + "')");
+                    dataAccessLayer.Close();
+                    if (success == 1)
+                    {
+                    Response.Write("<script>alert('Insert Successfully')</script>");
+                    TextBox1.Text = TextBox2.Text = TextBox3.Text = "";
+                    }
             }
         }
     }

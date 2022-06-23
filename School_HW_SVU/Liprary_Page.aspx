@@ -482,56 +482,16 @@ svg.svg1{
         </div>
         <div style="background-color:white;width:100%;position:relative;top:50px;justify-content:center;display:flex;">
             <div style="position:relative;width:100%;height:auto;display:flex;justify-content:center;flex-wrap:wrap;">
-                <div class="music">
-                    <div style="display:flex;flex-direction:column">
-                        <div style="margin-top:20px;">
-                            <img src="imges/545454.jpg" width="150px" height="150px" style="border-radius:20px;"/>
-                    </div>
-                    <div>
-                        <p style="opacity:0.8;color:black; text-align:center;font-size:20px;font-family:Verdana, Geneva, Tahoma, sans-serif;">أغانينا</p>
-                    </div>
-                        <div style="width:100%;display:flex;justify-content:center;align-content:center;">
-                    <div class="button">
-                        <i class='fas fa-music' style='font-size:18px;color:white'></i>
-                        <asp:Button runat="server" Text="للأستماع" CssClass="button1"/>
-                    </div>
-                            </div>
-                </div>
-            </div>
-            <div class="music">
-                <div style="display:flex;flex-direction:column">
-                    <div style="margin-top:20px;">
-                        <img src="imges/23344.jpg" width="150px" height="150px" style="border-radius:20px;"/>
-                    </div>
-                    <div>
-                        <p style="opacity:0.8;color:black; text-align:center;font-size:20px;font-family:Verdana, Geneva, Tahoma, sans-serif;">عالم مرح</p>
-                    </div>
-                    <div style="width:100%;display:flex;justify-content:center;">
-                    <div class="button">
-                        <i class='fas fa-music' style='font-size:18px;color:white'></i>
-                        <asp:Button runat="server" Text="للأستماع" CssClass="button1"/>
-                    </div>
-                        </div>
-                </div>
-            </div>
-            <div class="music">
-                <div style="display:flex;flex-direction:column">
-                    <div style="margin-top:20px;">
-                        <img src="imges/1111.jpg" width="150px" height="150px" style="border-radius:20px;"/>
-                    </div>
-                    <div>
-                        <p style="opacity:0.8;color:black; text-align:center;font-size:20px;font-family:Verdana, Geneva, Tahoma, sans-serif;">عالم مرح التعليمي</p>
-                    </div>
-                    <div style="width:100%;display:flex;justify-content:center;">
-                    <div class="button">
-                        <i class='fas fa-music' style='font-size:18px;color:white'></i>
-                        <asp:Button runat="server" Text="للأستماع" CssClass="button1"/>
-                    </div>
-                        </div>
-                </div>
-            </div>
+                <%this.Select_music(); %>
         </div>
      </div>
+        <div>
+            <div style="width:100%;display:flex;justify-content:center;margin-top:50px;">
+                    <div class="button">
+                        <asp:Button ID="Button2" runat="server" Text="إضافة" CssClass="button1" OnClick="Button1_Click"/>
+                    </div>
+                        </div>
+        </div>
   </div>
             </div> 
             </div>
